@@ -1,0 +1,1 @@
+{"train_loss": 2.0177284836769105, "val_loss": 2.0103058433532714, "_timestamp": 1688977295.38559, "_runtime": 343.3589081764221, "_step": 9901, "training_throughput": 992526.8734185599, "_wandb": {"runtime": 23}}

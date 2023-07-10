@@ -1,0 +1,26 @@
+
+training throughput = 1245163.0471525819 examples/s
+torch.Size([44, 16])
+torch.Size([100, 48])
+torch.Size([100])
+torch.Size([44, 100])
+torch.Size([44])
+<built-in method size of Parameter object at 0x7fa432ea6030>
+<built-in method size of Parameter object at 0x7fa432ea6490>
+<built-in method size of Parameter object at 0x7fa432ea64e0>
+<built-in method size of Parameter object at 0x7fa432ea4c30>
+<built-in method size of Parameter object at 0x7fa432ea60d0>
+torch.Size([44, 16])
+torch.Size([100, 48])
+torch.Size([100])
+torch.Size([44, 100])
+torch.Size([44])
+torch.Size([44, 16])
+torch.Size([100, 48])
+torch.Size([100])
+torch.Size([44, 100])
+torch.Size([44])
+704
+4800
+100
+4400

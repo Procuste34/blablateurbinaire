@@ -1,0 +1,1032 @@
+2023-07-10 10:15:52,027 INFO    StreamThr :7645 [internal.py:wandb_internal():86] W&B internal server running at pid: 7645, started at: 2023-07-10 10:15:52.027283
+2023-07-10 10:15:52,029 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status
+2023-07-10 10:15:52,030 INFO    WriterThread:7645 [datastore.py:open_for_write():85] open: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/run-mik53ibs.wandb
+2023-07-10 10:15:52,030 DEBUG   SenderThread:7645 [sender.py:send():369] send: header
+2023-07-10 10:15:52,030 DEBUG   SenderThread:7645 [sender.py:send():369] send: run
+2023-07-10 10:15:52,615 INFO    SenderThread:7645 [dir_watcher.py:__init__():211] watching files in: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files
+2023-07-10 10:15:52,616 INFO    SenderThread:7645 [sender.py:_start_run_threads():1100] run started: mik53ibs with start time 1688976952.026682
+2023-07-10 10:15:52,616 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:15:52,617 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:15:52,634 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: check_version
+2023-07-10 10:15:52,634 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: check_version
+2023-07-10 10:15:52,915 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: run_start
+2023-07-10 10:15:52,965 DEBUG   HandlerThread:7645 [system_info.py:__init__():31] System info init
+2023-07-10 10:15:52,965 DEBUG   HandlerThread:7645 [system_info.py:__init__():46] System info init done
+2023-07-10 10:15:52,965 INFO    HandlerThread:7645 [system_monitor.py:start():181] Starting system monitor
+2023-07-10 10:15:52,966 INFO    SystemMonitor:7645 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-10 10:15:52,967 INFO    HandlerThread:7645 [system_monitor.py:probe():201] Collecting system info
+2023-07-10 10:15:52,968 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started cpu monitoring
+2023-07-10 10:15:52,970 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started disk monitoring
+2023-07-10 10:15:52,971 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started gpu monitoring
+2023-07-10 10:15:52,973 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started memory monitoring
+2023-07-10 10:15:52,975 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started network monitoring
+2023-07-10 10:15:53,025 DEBUG   HandlerThread:7645 [system_info.py:probe():195] Probing system
+2023-07-10 10:15:53,025 DEBUG   HandlerThread:7645 [system_info.py:probe():240] Probing system done
+2023-07-10 10:15:53,025 DEBUG   HandlerThread:7645 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-76-generic-x86_64-with-glibc2.31', 'python': '3.11.3', 'heartbeatAt': '2023-07-10T08:15:53.025761', 'startedAt': '2023-07-10T08:15:52.023052', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'host': 'alexJAX', 'username': 'alex', 'executable': '/home/alex/miniconda3/envs/torch23/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2.8466666666666662, 'min': 800.0, 'max': 4600.0}, 'cpu_freq_per_core': [{'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 1.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 2.474, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 1.2, 'min': 800.0, 'max': 4600.0}, {'current': 1.2, 'min': 800.0, 'max': 4600.0}], 'disk': {'total': 219.00129318237305, 'used': 57.0557746887207}, 'gpu': 'NVIDIA GeForce GTX 1080 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 15.549362182617188}}
+2023-07-10 10:15:53,026 INFO    HandlerThread:7645 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-10 10:15:53,026 INFO    HandlerThread:7645 [system_monitor.py:probe():214] Publishing system info
+2023-07-10 10:15:53,026 DEBUG   HandlerThread:7645 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-10 10:15:53,026 DEBUG   HandlerThread:7645 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-10 10:15:53,026 DEBUG   HandlerThread:7645 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-10 10:15:53,616 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_created():272] file/dir created: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:15:53,616 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_created():272] file/dir created: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/requirements.txt
+2023-07-10 10:15:53,616 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_created():272] file/dir created: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/conda-environment.yaml
+2023-07-10 10:15:54,917 DEBUG   HandlerThread:7645 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-10 10:15:54,917 INFO    HandlerThread:7645 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-10 10:15:54,920 DEBUG   SenderThread:7645 [sender.py:send():369] send: files
+2023-07-10 10:15:54,920 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-10 10:15:54,928 DEBUG   SenderThread:7645 [sender.py:send():369] send: telemetry
+2023-07-10 10:15:54,929 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:15:54,929 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:15:55,035 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: pause
+2023-07-10 10:15:55,035 INFO    HandlerThread:7645 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-10 10:15:55,035 INFO    HandlerThread:7645 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-10 10:15:55,035 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-10 10:15:55,036 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-10 10:15:55,036 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-10 10:15:55,036 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-10 10:15:55,036 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined disk monitor
+2023-07-10 10:15:55,095 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-10 10:15:55,095 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined memory monitor
+2023-07-10 10:15:55,095 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined network monitor
+2023-07-10 10:15:55,179 DEBUG   SenderThread:7645 [sender.py:send():369] send: stats
+2023-07-10 10:15:55,616 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/conda-environment.yaml
+2023-07-10 10:15:55,617 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_created():272] file/dir created: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-metadata.json
+2023-07-10 10:15:55,667 INFO    wandb-upload_0:7645 [upload_job.py:push():133] Uploaded file /tmp/tmpfvm6ufzlwandb/c99utzbe-wandb-metadata.json
+2023-07-10 10:15:57,180 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:16:02,181 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:16:07,183 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:16:09,930 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:16:09,931 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:16:12,963 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:16:17,066 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: resume
+2023-07-10 10:16:17,066 INFO    HandlerThread:7645 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-10 10:16:17,066 INFO    HandlerThread:7645 [system_monitor.py:start():181] Starting system monitor
+2023-07-10 10:16:17,066 INFO    SystemMonitor:7645 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-10 10:16:17,066 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started cpu monitoring
+2023-07-10 10:16:17,067 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started disk monitoring
+2023-07-10 10:16:17,067 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started gpu monitoring
+2023-07-10 10:16:17,067 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started memory monitoring
+2023-07-10 10:16:17,067 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started network monitoring
+2023-07-10 10:16:17,203 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:17,321 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:17,322 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:17,322 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:17,323 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:17,436 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:17,436 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:17,436 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:17,436 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:17,536 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:17,537 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:17,537 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:17,537 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:17,627 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:16:17,638 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:17,638 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:17,638 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:17,638 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:17,741 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:17,742 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:17,742 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:17,742 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:17,851 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:17,851 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:17,852 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:17,852 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:17,956 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:17,957 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:17,957 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:17,957 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:18,067 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:18,068 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:18,068 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:18,068 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:16:18,068 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:18,181 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:18,182 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:18,182 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:18,182 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:18,296 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:18,296 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:18,296 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:18,296 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:18,395 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:18,396 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:18,396 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:18,396 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:18,497 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:18,498 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:18,498 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:18,498 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:18,597 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:18,597 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:18,597 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:18,598 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:18,627 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:16:18,707 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:18,707 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:18,707 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:18,708 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:18,821 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:18,821 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:18,821 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:18,821 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:18,935 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:18,935 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:18,936 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:18,936 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:19,041 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:19,041 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:19,042 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:19,042 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:19,147 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:19,148 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:19,148 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:19,148 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:19,253 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:19,253 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:19,254 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:19,254 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:19,364 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:19,365 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:19,365 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:19,366 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:19,478 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:19,479 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:19,479 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:19,479 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:19,587 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:19,587 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:19,587 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:19,587 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:19,627 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:16:19,692 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:19,692 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:19,692 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:19,692 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:19,792 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:19,793 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:19,793 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:19,793 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:19,894 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:19,894 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:19,894 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:19,895 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:19,996 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:19,997 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:19,997 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:19,997 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:20,094 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:20,094 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:20,094 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:20,094 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:20,194 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:20,195 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:20,195 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:20,195 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:20,295 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:20,295 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:20,295 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:20,295 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:20,405 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:20,405 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:20,405 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:20,406 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:20,521 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:20,521 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:20,521 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:20,522 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:20,626 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:20,627 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:20,627 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:20,627 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:20,627 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:16:20,738 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:20,739 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:20,739 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:20,739 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:20,853 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:20,854 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:20,854 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:20,854 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:20,967 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:20,967 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:20,967 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:20,968 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:21,068 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:21,069 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:21,069 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:21,069 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:21,176 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:21,177 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:21,177 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:21,177 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:21,286 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:21,287 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:21,287 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:21,287 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:21,384 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:21,384 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:21,384 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:21,384 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:21,481 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:21,481 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:21,481 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:21,481 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:21,588 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:21,589 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:21,589 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:21,589 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:21,628 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:16:21,704 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:21,705 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:21,705 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:21,705 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:21,821 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:21,822 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:21,822 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:21,822 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:21,936 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:21,936 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:21,936 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:21,937 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:22,039 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:22,039 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:22,040 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:22,040 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:22,140 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:22,140 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:22,141 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:22,141 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:22,241 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:22,242 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:22,242 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:22,242 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:22,353 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:22,353 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:22,353 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:22,353 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:22,455 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:22,456 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:22,456 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:22,456 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:22,569 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:22,570 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:22,570 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:22,570 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:22,628 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:16:22,681 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:22,681 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:22,682 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:22,682 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:22,793 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:22,793 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:22,793 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:22,794 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:22,896 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:22,897 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:22,897 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:22,897 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:23,010 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:23,010 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:23,010 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:23,011 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:23,122 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:23,123 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:23,125 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:16:23,235 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:23,331 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:23,441 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:23,547 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:23,628 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:16:23,651 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:23,755 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:23,863 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:23,970 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:24,077 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:24,159 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,159 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,159 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,159 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,159 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,159 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,160 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,160 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,160 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,160 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,160 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,160 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,160 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,160 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,160 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,160 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,161 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,161 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,161 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,161 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,161 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,161 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,161 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,161 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,161 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,162 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,162 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,162 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,162 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,178 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:24,179 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,179 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,179 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,280 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:24,281 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,281 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,281 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,378 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:24,379 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,379 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,379 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,477 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:24,477 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,477 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,477 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,586 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:24,586 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,586 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,587 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,628 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:16:24,628 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/config.yaml
+2023-07-10 10:16:24,687 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:24,687 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,688 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,688 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,787 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:24,788 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,788 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,788 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,886 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:24,886 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:24,886 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:24,887 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:24,928 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:16:24,928 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:16:24,992 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:25,106 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:25,220 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:25,322 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:25,424 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:25,524 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:25,617 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:25,617 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:25,619 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:25,619 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:25,619 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:25,619 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:25,619 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:25,619 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:25,619 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:25,620 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:25,620 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:25,620 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:25,620 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:25,620 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:25,620 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:25,620 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:25,620 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:25,620 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:25,626 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:25,626 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:25,626 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:25,626 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:25,628 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:16:25,729 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:25,730 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:25,730 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:25,730 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:25,835 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:25,836 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:25,836 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:25,836 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:25,935 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:25,935 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:25,935 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:25,936 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:26,031 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:26,032 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:26,032 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:26,032 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:26,130 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:26,130 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:26,130 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:26,131 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:26,229 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:26,229 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:26,229 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:26,229 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:26,338 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:26,339 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:26,339 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:26,339 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:26,438 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:26,438 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:26,438 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:26,438 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:26,536 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:26,537 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:26,537 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:26,537 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:26,629 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:16:26,636 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:26,636 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:26,637 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:26,637 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:26,736 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:26,737 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:26,737 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:26,737 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:26,842 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:26,842 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:26,843 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:26,843 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:26,943 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:26,944 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:26,944 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:26,944 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:27,043 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:27,043 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:27,043 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:27,044 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:27,154 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:27,154 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:27,154 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:27,154 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:27,259 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:27,259 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:27,259 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:27,260 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:27,362 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:27,362 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:27,362 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:27,363 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:27,462 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:27,463 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:27,463 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:27,463 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:27,562 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:27,562 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:27,562 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:27,563 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:27,629 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:16:27,661 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:27,661 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:27,661 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:27,661 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:27,729 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:16:27,729 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: pause
+2023-07-10 10:16:27,730 INFO    HandlerThread:7645 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-10 10:16:27,730 INFO    HandlerThread:7645 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-10 10:16:27,730 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:16:27,730 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-10 10:16:27,730 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-10 10:16:27,730 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:16:27,730 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-10 10:16:27,730 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined disk monitor
+2023-07-10 10:16:27,731 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-10 10:16:27,731 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:16:27,790 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-10 10:16:27,790 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined memory monitor
+2023-07-10 10:16:27,790 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined network monitor
+2023-07-10 10:16:27,791 DEBUG   SenderThread:7645 [sender.py:send():369] send: stats
+2023-07-10 10:16:28,630 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:16:28,630 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_created():272] file/dir created: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/output.log
+2023-07-10 10:16:29,792 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:16:30,631 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/output.log
+2023-07-10 10:16:34,793 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:16:39,794 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:16:39,929 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:16:39,930 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:16:45,214 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:16:50,214 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:16:54,929 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:16:54,930 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:16:55,564 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:17:00,564 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:17:05,566 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:17:09,929 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:17:09,931 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:17:11,218 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:17:16,219 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:17:21,221 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:17:24,931 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:17:24,932 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:17:26,670 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:17:31,671 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:17:36,672 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:17:39,931 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:17:39,932 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:17:42,641 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:17:47,643 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:17:52,643 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:17:54,930 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:17:54,931 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:17:58,617 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:18:03,618 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:18:08,619 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:18:09,929 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:18:09,929 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:18:14,128 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:18:19,130 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:18:24,131 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:18:24,931 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:18:24,933 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:18:29,182 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:18:34,183 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:18:39,184 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:18:39,930 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:18:39,930 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:18:45,090 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:18:50,091 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:18:54,930 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:18:54,930 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:18:55,187 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:19:00,188 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:19:05,189 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:19:09,930 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:19:09,930 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:19:11,138 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:19:16,139 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:19:21,140 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:19:24,930 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:19:24,930 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:19:26,193 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:19:31,194 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:19:36,195 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:19:39,930 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:19:39,930 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:19:42,144 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:19:47,145 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:19:52,146 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:19:54,932 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:19:54,933 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:19:58,128 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:20:03,129 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:20:07,498 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: resume
+2023-07-10 10:20:07,498 INFO    HandlerThread:7645 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-10 10:20:07,498 INFO    HandlerThread:7645 [system_monitor.py:start():181] Starting system monitor
+2023-07-10 10:20:07,498 INFO    SystemMonitor:7645 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-10 10:20:07,499 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started cpu monitoring
+2023-07-10 10:20:07,499 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started disk monitoring
+2023-07-10 10:20:07,500 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started gpu monitoring
+2023-07-10 10:20:07,500 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started memory monitoring
+2023-07-10 10:20:07,501 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started network monitoring
+2023-07-10 10:20:07,542 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: pause
+2023-07-10 10:20:07,542 INFO    HandlerThread:7645 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-10 10:20:07,543 INFO    HandlerThread:7645 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-10 10:20:07,543 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-10 10:20:07,543 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-10 10:20:07,543 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-10 10:20:07,544 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-10 10:20:07,544 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined disk monitor
+2023-07-10 10:20:07,628 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-10 10:20:07,628 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined memory monitor
+2023-07-10 10:20:07,628 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined network monitor
+2023-07-10 10:20:07,628 DEBUG   SenderThread:7645 [sender.py:send():369] send: stats
+2023-07-10 10:20:08,629 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:20:09,930 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:20:09,931 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:20:14,150 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:20:19,151 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:20:24,152 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:20:24,931 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:20:24,933 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:20:29,167 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:20:34,168 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:20:39,169 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:20:39,931 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:20:39,933 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:20:44,186 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:20:49,187 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:20:54,188 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:20:54,932 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:20:54,933 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:21:00,114 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:21:05,115 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:21:09,931 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:21:09,932 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:21:10,125 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:21:15,127 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:21:20,127 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:21:24,932 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:21:24,933 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:21:25,067 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: resume
+2023-07-10 10:21:25,067 INFO    HandlerThread:7645 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-10 10:21:25,067 INFO    HandlerThread:7645 [system_monitor.py:start():181] Starting system monitor
+2023-07-10 10:21:25,067 INFO    SystemMonitor:7645 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-10 10:21:25,068 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started cpu monitoring
+2023-07-10 10:21:25,068 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started disk monitoring
+2023-07-10 10:21:25,068 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started gpu monitoring
+2023-07-10 10:21:25,068 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started memory monitoring
+2023-07-10 10:21:25,069 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started network monitoring
+2023-07-10 10:21:25,122 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:25,122 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 0 < 9901. Dropping entry: {'loss_train': 2.0262802982330324, 'loss_val': 2.014448952674866, 'update_to_data': {'embed.weight': -4.267598628997803, 'fc1.weight': -3.156681776046753, 'fc1.bias': -3.453608989715576, 'lm_head.weight': -3.1948959827423096, 'lm_head.bias': -3.3471972942352295}, '_timestamp': 1688977285.1224453}.
+2023-07-10 10:21:25,233 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:25,233 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 100 < 9901. Dropping entry: {'loss_train': 2.021669852733612, 'loss_val': 2.007742464542389, 'update_to_data': {'embed.weight': -4.371819496154785, 'fc1.weight': -3.1870551109313965, 'fc1.bias': -3.4944798946380615, 'lm_head.weight': -3.2313790321350098, 'lm_head.bias': -3.4534780979156494}, '_timestamp': 1688977285.2330377}.
+2023-07-10 10:21:25,337 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:25,337 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 200 < 9901. Dropping entry: {'loss_train': 2.014217576980591, 'loss_val': 2.0091556787490843, 'update_to_data': {'embed.weight': -4.3313188552856445, 'fc1.weight': -3.1871140003204346, 'fc1.bias': -3.3905112743377686, 'lm_head.weight': -3.232156991958618, 'lm_head.bias': -3.3589677810668945}, '_timestamp': 1688977285.3372748}.
+2023-07-10 10:21:25,449 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:25,449 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 300 < 9901. Dropping entry: {'loss_train': 2.02190833568573, 'loss_val': 1.994550654888153, 'update_to_data': {'embed.weight': -4.316950798034668, 'fc1.weight': -3.1744282245635986, 'fc1.bias': -3.6029958724975586, 'lm_head.weight': -3.284226417541504, 'lm_head.bias': -3.5971572399139404}, '_timestamp': 1688977285.449081}.
+2023-07-10 10:21:25,557 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:25,557 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 400 < 9901. Dropping entry: {'loss_train': 2.0116753339767457, 'loss_val': 2.020247313976288, 'update_to_data': {'embed.weight': -4.290711879730225, 'fc1.weight': -3.1637489795684814, 'fc1.bias': -3.4233555793762207, 'lm_head.weight': -3.1860311031341553, 'lm_head.bias': -3.3582046031951904}, '_timestamp': 1688977285.5569513}.
+2023-07-10 10:21:25,661 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:25,661 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 500 < 9901. Dropping entry: {'loss_train': 2.013777058124542, 'loss_val': 2.014466185569763, 'update_to_data': {'embed.weight': -4.346003532409668, 'fc1.weight': -3.1641104221343994, 'fc1.bias': -3.4512763023376465, 'lm_head.weight': -3.1649529933929443, 'lm_head.bias': -3.274643659591675}, '_timestamp': 1688977285.6613}.
+2023-07-10 10:21:25,763 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:25,763 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 600 < 9901. Dropping entry: {'loss_train': 2.0111290526390078, 'loss_val': 1.9952154660224914, 'update_to_data': {'embed.weight': -4.358314037322998, 'fc1.weight': -3.1872360706329346, 'fc1.bias': -3.4216835498809814, 'lm_head.weight': -3.188492774963379, 'lm_head.bias': -3.32814359664917}, '_timestamp': 1688977285.7629187}.
+2023-07-10 10:21:25,866 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:25,866 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 700 < 9901. Dropping entry: {'loss_train': 2.012616136074066, 'loss_val': 2.000557725429535, 'update_to_data': {'embed.weight': -4.318039417266846, 'fc1.weight': -3.182328939437866, 'fc1.bias': -3.4306039810180664, 'lm_head.weight': -3.2449378967285156, 'lm_head.bias': -3.409832715988159}, '_timestamp': 1688977285.8661895}.
+2023-07-10 10:21:25,975 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:25,975 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 800 < 9901. Dropping entry: {'loss_train': 2.0089194631576537, 'loss_val': 2.0063228225708007, 'update_to_data': {'embed.weight': -4.365662574768066, 'fc1.weight': -3.167914390563965, 'fc1.bias': -3.5217981338500977, 'lm_head.weight': -3.2111356258392334, 'lm_head.bias': -3.3849098682403564}, '_timestamp': 1688977285.974828}.
+2023-07-10 10:21:26,081 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:26,081 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 900 < 9901. Dropping entry: {'loss_train': 2.0111167502403258, 'loss_val': 2.001258749961853, 'update_to_data': {'embed.weight': -4.311469078063965, 'fc1.weight': -3.1990833282470703, 'fc1.bias': -3.588082790374756, 'lm_head.weight': -3.27435564994812, 'lm_head.bias': -3.4948551654815674}, '_timestamp': 1688977286.0812569}.
+2023-07-10 10:21:26,098 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:21:26,195 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:26,196 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 1000 < 9901. Dropping entry: {'loss_train': 2.0073663187026978, 'loss_val': 2.0050368332862853, 'update_to_data': {'embed.weight': -4.2923150062561035, 'fc1.weight': -3.189697742462158, 'fc1.bias': -3.5233330726623535, 'lm_head.weight': -3.1975269317626953, 'lm_head.bias': -3.366774559020996}, '_timestamp': 1688977286.195525}.
+2023-07-10 10:21:26,302 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:26,302 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 1100 < 9901. Dropping entry: {'loss_train': 1.9978063583374024, 'loss_val': 1.997665205001831, 'update_to_data': {'embed.weight': -4.291655540466309, 'fc1.weight': -3.170621633529663, 'fc1.bias': -3.476807117462158, 'lm_head.weight': -3.232646942138672, 'lm_head.bias': -3.3635830879211426}, '_timestamp': 1688977286.3019516}.
+2023-07-10 10:21:26,408 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:26,408 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 1200 < 9901. Dropping entry: {'loss_train': 1.9947309732437133, 'loss_val': 1.9977219247817992, 'update_to_data': {'embed.weight': -4.330207824707031, 'fc1.weight': -3.1656107902526855, 'fc1.bias': -3.4066076278686523, 'lm_head.weight': -3.195744514465332, 'lm_head.bias': -3.326890468597412}, '_timestamp': 1688977286.4083612}.
+2023-07-10 10:21:26,518 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:26,518 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 1300 < 9901. Dropping entry: {'loss_train': 2.0156357645988465, 'loss_val': 1.9937163805961609, 'update_to_data': {'embed.weight': -4.3088507652282715, 'fc1.weight': -3.1371400356292725, 'fc1.bias': -3.4664015769958496, 'lm_head.weight': -3.200723648071289, 'lm_head.bias': -3.3614819049835205}, '_timestamp': 1688977286.518334}.
+2023-07-10 10:21:26,623 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:26,624 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 1400 < 9901. Dropping entry: {'loss_train': 2.00576411485672, 'loss_val': 1.9963893389701843, 'update_to_data': {'embed.weight': -4.350501537322998, 'fc1.weight': -3.1814463138580322, 'fc1.bias': -3.4618301391601562, 'lm_head.weight': -3.240617036819458, 'lm_head.bias': -3.401953935623169}, '_timestamp': 1688977286.623663}.
+2023-07-10 10:21:26,727 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:26,727 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 1500 < 9901. Dropping entry: {'loss_train': 1.9983395981788634, 'loss_val': 1.9883033537864685, 'update_to_data': {'embed.weight': -4.327171802520752, 'fc1.weight': -3.1548523902893066, 'fc1.bias': -3.3433094024658203, 'lm_head.weight': -3.1636288166046143, 'lm_head.bias': -3.200010061264038}, '_timestamp': 1688977286.727478}.
+2023-07-10 10:21:26,831 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:26,831 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 1600 < 9901. Dropping entry: {'loss_train': 1.989752745628357, 'loss_val': 1.9980422067642212, 'update_to_data': {'embed.weight': -4.309445381164551, 'fc1.weight': -3.204820156097412, 'fc1.bias': -3.5016636848449707, 'lm_head.weight': -3.2598507404327393, 'lm_head.bias': -3.4004507064819336}, '_timestamp': 1688977286.8312263}.
+2023-07-10 10:21:26,931 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:26,931 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 1700 < 9901. Dropping entry: {'loss_train': 1.998809049129486, 'loss_val': 1.9993133783340453, 'update_to_data': {'embed.weight': -4.319890022277832, 'fc1.weight': -3.185811758041382, 'fc1.bias': -3.5667014122009277, 'lm_head.weight': -3.2682290077209473, 'lm_head.bias': -3.5244193077087402}, '_timestamp': 1688977286.9314933}.
+2023-07-10 10:21:27,030 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:27,031 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 1800 < 9901. Dropping entry: {'loss_train': 1.994604194164276, 'loss_val': 2.007003893852234, 'update_to_data': {'embed.weight': -4.391228199005127, 'fc1.weight': -3.188828229904175, 'fc1.bias': -3.482513189315796, 'lm_head.weight': -3.2524352073669434, 'lm_head.bias': -3.430694341659546}, '_timestamp': 1688977287.030635}.
+2023-07-10 10:21:27,140 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:27,140 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 1900 < 9901. Dropping entry: {'loss_train': 1.988711380958557, 'loss_val': 1.9784563755989075, 'update_to_data': {'embed.weight': -4.341772079467773, 'fc1.weight': -3.1484055519104004, 'fc1.bias': -3.427032470703125, 'lm_head.weight': -3.2067642211914062, 'lm_head.bias': -3.3192431926727295}, '_timestamp': 1688977287.1401093}.
+2023-07-10 10:21:27,245 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:27,245 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 2000 < 9901. Dropping entry: {'loss_train': 2.0005307531356813, 'loss_val': 1.994993052482605, 'update_to_data': {'embed.weight': -4.394845485687256, 'fc1.weight': -3.2072484493255615, 'fc1.bias': -3.547981023788452, 'lm_head.weight': -3.2527990341186523, 'lm_head.bias': -3.38712215423584}, '_timestamp': 1688977287.2452567}.
+2023-07-10 10:21:27,343 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:27,343 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 2100 < 9901. Dropping entry: {'loss_train': 1.9936991763114928, 'loss_val': 1.9822856736183168, 'update_to_data': {'embed.weight': -4.301731109619141, 'fc1.weight': -3.170295000076294, 'fc1.bias': -3.4427835941314697, 'lm_head.weight': -3.2492640018463135, 'lm_head.bias': -3.430161714553833}, '_timestamp': 1688977287.3430216}.
+2023-07-10 10:21:27,443 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:27,443 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 2200 < 9901. Dropping entry: {'loss_train': 1.9921174335479737, 'loss_val': 1.9870730805397034, 'update_to_data': {'embed.weight': -4.376737117767334, 'fc1.weight': -3.1925570964813232, 'fc1.bias': -3.5971519947052, 'lm_head.weight': -3.236565113067627, 'lm_head.bias': -3.428529977798462}, '_timestamp': 1688977287.4434474}.
+2023-07-10 10:21:27,541 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:27,542 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 2300 < 9901. Dropping entry: {'loss_train': 1.9965078330039978, 'loss_val': 1.9891792011260987, 'update_to_data': {'embed.weight': -4.359050273895264, 'fc1.weight': -3.187833786010742, 'fc1.bias': -3.519362211227417, 'lm_head.weight': -3.2691192626953125, 'lm_head.bias': -3.4943506717681885}, '_timestamp': 1688977287.5417118}.
+2023-07-10 10:21:27,640 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:27,640 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 2400 < 9901. Dropping entry: {'loss_train': 1.990438106060028, 'loss_val': 1.9721833276748657, 'update_to_data': {'embed.weight': -4.303553104400635, 'fc1.weight': -3.1800529956817627, 'fc1.bias': -3.3900351524353027, 'lm_head.weight': -3.1916537284851074, 'lm_head.bias': -3.3095057010650635}, '_timestamp': 1688977287.639737}.
+2023-07-10 10:21:27,737 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:27,737 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 2500 < 9901. Dropping entry: {'loss_train': 1.987112410068512, 'loss_val': 1.982471659183502, 'update_to_data': {'embed.weight': -4.361649036407471, 'fc1.weight': -3.1719772815704346, 'fc1.bias': -3.518214225769043, 'lm_head.weight': -3.235306978225708, 'lm_head.bias': -3.4494082927703857}, '_timestamp': 1688977287.737305}.
+2023-07-10 10:21:27,835 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:27,835 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 2600 < 9901. Dropping entry: {'loss_train': 1.9873684334754944, 'loss_val': 1.972022454738617, 'update_to_data': {'embed.weight': -4.313000202178955, 'fc1.weight': -3.197072982788086, 'fc1.bias': -3.390188217163086, 'lm_head.weight': -3.277740955352783, 'lm_head.bias': -3.414121150970459}, '_timestamp': 1688977287.8351872}.
+2023-07-10 10:21:27,935 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:27,936 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 2700 < 9901. Dropping entry: {'loss_train': 1.9795318388938903, 'loss_val': 1.9685190153121948, 'update_to_data': {'embed.weight': -4.363775253295898, 'fc1.weight': -3.1920485496520996, 'fc1.bias': -3.4925472736358643, 'lm_head.weight': -3.2619266510009766, 'lm_head.bias': -3.43505597114563}, '_timestamp': 1688977287.93572}.
+2023-07-10 10:21:28,036 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:28,036 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 2800 < 9901. Dropping entry: {'loss_train': 1.9792194485664367, 'loss_val': 1.9723907470703126, 'update_to_data': {'embed.weight': -4.303092002868652, 'fc1.weight': -3.1860413551330566, 'fc1.bias': -3.431278705596924, 'lm_head.weight': -3.245208263397217, 'lm_head.bias': -3.3837575912475586}, '_timestamp': 1688977288.036402}.
+2023-07-10 10:21:28,136 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:28,136 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 2900 < 9901. Dropping entry: {'loss_train': 1.979352180957794, 'loss_val': 1.9792338347434997, 'update_to_data': {'embed.weight': -4.363219261169434, 'fc1.weight': -3.210874080657959, 'fc1.bias': -3.5363857746124268, 'lm_head.weight': -3.2597787380218506, 'lm_head.bias': -3.421862840652466}, '_timestamp': 1688977288.136138}.
+2023-07-10 10:21:28,235 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:28,235 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 3000 < 9901. Dropping entry: {'loss_train': 1.9807990980148316, 'loss_val': 1.96971262216568, 'update_to_data': {'embed.weight': -4.304712295532227, 'fc1.weight': -3.1789610385894775, 'fc1.bias': -3.454333782196045, 'lm_head.weight': -3.2306008338928223, 'lm_head.bias': -3.3259220123291016}, '_timestamp': 1688977288.2348688}.
+2023-07-10 10:21:28,333 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:28,333 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 3100 < 9901. Dropping entry: {'loss_train': 1.986269063949585, 'loss_val': 1.9690477180480956, 'update_to_data': {'embed.weight': -4.295726299285889, 'fc1.weight': -3.1760623455047607, 'fc1.bias': -3.4201724529266357, 'lm_head.weight': -3.26798939704895, 'lm_head.bias': -3.417560338973999}, '_timestamp': 1688977288.3335252}.
+2023-07-10 10:21:28,430 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:28,431 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 3200 < 9901. Dropping entry: {'loss_train': 1.9783282709121703, 'loss_val': 1.9680391478538513, 'update_to_data': {'embed.weight': -4.385879993438721, 'fc1.weight': -3.228795289993286, 'fc1.bias': -3.574549436569214, 'lm_head.weight': -3.283151149749756, 'lm_head.bias': -3.5421435832977295}, '_timestamp': 1688977288.4306822}.
+2023-07-10 10:21:28,529 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:28,529 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 3300 < 9901. Dropping entry: {'loss_train': 1.9751170086860657, 'loss_val': 1.9785784149169923, 'update_to_data': {'embed.weight': -4.256702423095703, 'fc1.weight': -3.159654378890991, 'fc1.bias': -3.4441845417022705, 'lm_head.weight': -3.2099733352661133, 'lm_head.bias': -3.386455535888672}, '_timestamp': 1688977288.5287752}.
+2023-07-10 10:21:28,637 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:28,637 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 3400 < 9901. Dropping entry: {'loss_train': 1.9766710662841798, 'loss_val': 1.9666379261016846, 'update_to_data': {'embed.weight': -4.323893070220947, 'fc1.weight': -3.182818651199341, 'fc1.bias': -3.4802677631378174, 'lm_head.weight': -3.228464365005493, 'lm_head.bias': -3.357192277908325}, '_timestamp': 1688977288.637135}.
+2023-07-10 10:21:28,736 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:28,736 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 3500 < 9901. Dropping entry: {'loss_train': 1.9824899816513062, 'loss_val': 1.96833505153656, 'update_to_data': {'embed.weight': -4.369137763977051, 'fc1.weight': -3.199153184890747, 'fc1.bias': -3.5895633697509766, 'lm_head.weight': -3.2793385982513428, 'lm_head.bias': -3.407158374786377}, '_timestamp': 1688977288.7364628}.
+2023-07-10 10:21:28,837 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:28,837 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 3600 < 9901. Dropping entry: {'loss_train': 1.9836514043807982, 'loss_val': 1.9722269105911254, 'update_to_data': {'embed.weight': -4.335034370422363, 'fc1.weight': -3.1707067489624023, 'fc1.bias': -3.4775683879852295, 'lm_head.weight': -3.2622125148773193, 'lm_head.bias': -3.4537203311920166}, '_timestamp': 1688977288.8370082}.
+2023-07-10 10:21:28,940 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:28,940 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 3700 < 9901. Dropping entry: {'loss_train': 1.9729522418975831, 'loss_val': 1.9740375638008119, 'update_to_data': {'embed.weight': -4.3357014656066895, 'fc1.weight': -3.2017104625701904, 'fc1.bias': -3.5342564582824707, 'lm_head.weight': -3.265235185623169, 'lm_head.bias': -3.4797935485839844}, '_timestamp': 1688977288.9405987}.
+2023-07-10 10:21:29,044 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:29,044 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 3800 < 9901. Dropping entry: {'loss_train': 1.968433964252472, 'loss_val': 1.9596243929862975, 'update_to_data': {'embed.weight': -4.2925519943237305, 'fc1.weight': -3.1862869262695312, 'fc1.bias': -3.42490291595459, 'lm_head.weight': -3.245605230331421, 'lm_head.bias': -3.379002094268799}, '_timestamp': 1688977289.043731}.
+2023-07-10 10:21:29,146 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:29,146 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 3900 < 9901. Dropping entry: {'loss_train': 1.972711842060089, 'loss_val': 1.9658960676193238, 'update_to_data': {'embed.weight': -4.320127964019775, 'fc1.weight': -3.1595048904418945, 'fc1.bias': -3.322046995162964, 'lm_head.weight': -3.2263691425323486, 'lm_head.bias': -3.31001615524292}, '_timestamp': 1688977289.1459863}.
+2023-07-10 10:21:29,246 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:29,246 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 4000 < 9901. Dropping entry: {'loss_train': 1.9777465963363647, 'loss_val': 1.965614902973175, 'update_to_data': {'embed.weight': -4.341983795166016, 'fc1.weight': -3.1982898712158203, 'fc1.bias': -3.6336569786071777, 'lm_head.weight': -3.2998480796813965, 'lm_head.bias': -3.586733818054199}, '_timestamp': 1688977289.2460294}.
+2023-07-10 10:21:29,345 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:29,346 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 4100 < 9901. Dropping entry: {'loss_train': 1.9690480709075928, 'loss_val': 1.9639510345458984, 'update_to_data': {'embed.weight': -4.34535026550293, 'fc1.weight': -3.182790517807007, 'fc1.bias': -3.561293125152588, 'lm_head.weight': -3.241990804672241, 'lm_head.bias': -3.4110214710235596}, '_timestamp': 1688977289.3455868}.
+2023-07-10 10:21:29,445 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:29,445 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 4200 < 9901. Dropping entry: {'loss_train': 1.9634979701042174, 'loss_val': 1.9639756751060486, 'update_to_data': {'embed.weight': -4.288539886474609, 'fc1.weight': -3.176074981689453, 'fc1.bias': -3.498776912689209, 'lm_head.weight': -3.275850534439087, 'lm_head.bias': -3.4010348320007324}, '_timestamp': 1688977289.4451885}.
+2023-07-10 10:21:29,544 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:29,544 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 4300 < 9901. Dropping entry: {'loss_train': 1.9723979067802428, 'loss_val': 1.9600824642181396, 'update_to_data': {'embed.weight': -4.367924213409424, 'fc1.weight': -3.185716152191162, 'fc1.bias': -3.528073310852051, 'lm_head.weight': -3.262774705886841, 'lm_head.bias': -3.4168007373809814}, '_timestamp': 1688977289.5442348}.
+2023-07-10 10:21:29,644 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:29,644 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 4400 < 9901. Dropping entry: {'loss_train': 1.9608714890480041, 'loss_val': 1.964062066078186, 'update_to_data': {'embed.weight': -4.4073309898376465, 'fc1.weight': -3.235496997833252, 'fc1.bias': -3.5259182453155518, 'lm_head.weight': -3.2833380699157715, 'lm_head.bias': -3.381397008895874}, '_timestamp': 1688977289.6443977}.
+2023-07-10 10:21:29,746 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:29,746 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 4500 < 9901. Dropping entry: {'loss_train': 1.9715152788162231, 'loss_val': 1.9596484947204589, 'update_to_data': {'embed.weight': -4.371754169464111, 'fc1.weight': -3.188755512237549, 'fc1.bias': -3.4598886966705322, 'lm_head.weight': -3.2596988677978516, 'lm_head.bias': -3.385133981704712}, '_timestamp': 1688977289.745762}.
+2023-07-10 10:21:29,851 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:29,851 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 4600 < 9901. Dropping entry: {'loss_train': 1.9663113355636597, 'loss_val': 1.9664677047729493, 'update_to_data': {'embed.weight': -4.272784233093262, 'fc1.weight': -3.1844284534454346, 'fc1.bias': -3.421872854232788, 'lm_head.weight': -3.229703664779663, 'lm_head.bias': -3.3976564407348633}, '_timestamp': 1688977289.8515408}.
+2023-07-10 10:21:29,951 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:29,951 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 4700 < 9901. Dropping entry: {'loss_train': 1.9607215905189515, 'loss_val': 1.9632879519462585, 'update_to_data': {'embed.weight': -4.308906555175781, 'fc1.weight': -3.1729702949523926, 'fc1.bias': -3.4802193641662598, 'lm_head.weight': -3.2451722621917725, 'lm_head.bias': -3.4199037551879883}, '_timestamp': 1688977289.9515736}.
+2023-07-10 10:21:30,052 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:30,053 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 4800 < 9901. Dropping entry: {'loss_train': 1.9693046832084655, 'loss_val': 1.9501248359680177, 'update_to_data': {'embed.weight': -4.376344680786133, 'fc1.weight': -3.2137789726257324, 'fc1.bias': -3.6409502029418945, 'lm_head.weight': -3.2999539375305176, 'lm_head.bias': -3.575105667114258}, '_timestamp': 1688977290.0526352}.
+2023-07-10 10:21:30,152 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:30,153 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 4900 < 9901. Dropping entry: {'loss_train': 1.9562163352966309, 'loss_val': 1.9634401035308837, 'update_to_data': {'embed.weight': -4.315682411193848, 'fc1.weight': -3.194645881652832, 'fc1.bias': -3.457261562347412, 'lm_head.weight': -3.2522969245910645, 'lm_head.bias': -3.384429454803467}, '_timestamp': 1688977290.1526148}.
+2023-07-10 10:21:30,252 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:30,252 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 5000 < 9901. Dropping entry: {'loss_train': 1.9745561933517457, 'loss_val': 1.9670514893531799, 'update_to_data': {'embed.weight': -4.244141578674316, 'fc1.weight': -3.1273903846740723, 'fc1.bias': -3.3282268047332764, 'lm_head.weight': -3.184952974319458, 'lm_head.bias': -3.2632479667663574}, '_timestamp': 1688977290.25244}.
+2023-07-10 10:21:30,354 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:30,354 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 5100 < 9901. Dropping entry: {'loss_train': 1.963424599170685, 'loss_val': 1.9562103319168092, 'update_to_data': {'embed.weight': -4.357651233673096, 'fc1.weight': -3.1888794898986816, 'fc1.bias': -3.478039264678955, 'lm_head.weight': -3.276927947998047, 'lm_head.bias': -3.4111433029174805}, '_timestamp': 1688977290.3545625}.
+2023-07-10 10:21:30,456 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:30,456 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 5200 < 9901. Dropping entry: {'loss_train': 1.9531892728805542, 'loss_val': 1.9613986611366272, 'update_to_data': {'embed.weight': -4.378731727600098, 'fc1.weight': -3.192159652709961, 'fc1.bias': -3.552823543548584, 'lm_head.weight': -3.2491378784179688, 'lm_head.bias': -3.483034610748291}, '_timestamp': 1688977290.4562128}.
+2023-07-10 10:21:30,559 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:30,559 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 5300 < 9901. Dropping entry: {'loss_train': 1.959482183456421, 'loss_val': 1.9644722509384156, 'update_to_data': {'embed.weight': -4.314434051513672, 'fc1.weight': -3.1786699295043945, 'fc1.bias': -3.5417332649230957, 'lm_head.weight': -3.273289680480957, 'lm_head.bias': -3.488802909851074}, '_timestamp': 1688977290.558885}.
+2023-07-10 10:21:30,660 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:30,661 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 5400 < 9901. Dropping entry: {'loss_train': 1.9553532481193543, 'loss_val': 1.9570597648620605, 'update_to_data': {'embed.weight': -4.333055019378662, 'fc1.weight': -3.1868412494659424, 'fc1.bias': -3.440269947052002, 'lm_head.weight': -3.2795908451080322, 'lm_head.bias': -3.3703818321228027}, '_timestamp': 1688977290.6606193}.
+2023-07-10 10:21:30,762 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:30,762 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 5500 < 9901. Dropping entry: {'loss_train': 1.9457210516929626, 'loss_val': 1.9473098731040954, 'update_to_data': {'embed.weight': -4.342655181884766, 'fc1.weight': -3.175631046295166, 'fc1.bias': -3.4261884689331055, 'lm_head.weight': -3.2477409839630127, 'lm_head.bias': -3.3242452144622803}, '_timestamp': 1688977290.7620916}.
+2023-07-10 10:21:30,863 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:30,863 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 5600 < 9901. Dropping entry: {'loss_train': 1.9668450832366944, 'loss_val': 1.9400285243988038, 'update_to_data': {'embed.weight': -4.310477256774902, 'fc1.weight': -3.177152395248413, 'fc1.bias': -3.4673912525177, 'lm_head.weight': -3.2749781608581543, 'lm_head.bias': -3.387714147567749}, '_timestamp': 1688977290.8630824}.
+2023-07-10 10:21:30,962 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:30,963 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 5700 < 9901. Dropping entry: {'loss_train': 1.9456330490112306, 'loss_val': 1.9523997521400451, 'update_to_data': {'embed.weight': -4.350383281707764, 'fc1.weight': -3.2066707611083984, 'fc1.bias': -3.4449844360351562, 'lm_head.weight': -3.2903037071228027, 'lm_head.bias': -3.363710880279541}, '_timestamp': 1688977290.9627042}.
+2023-07-10 10:21:31,062 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:31,062 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 5800 < 9901. Dropping entry: {'loss_train': 1.9559779357910156, 'loss_val': 1.954976737499237, 'update_to_data': {'embed.weight': -4.338723182678223, 'fc1.weight': -3.2012698650360107, 'fc1.bias': -3.46893310546875, 'lm_head.weight': -3.253917932510376, 'lm_head.bias': -3.346798896789551}, '_timestamp': 1688977291.0620408}.
+2023-07-10 10:21:31,098 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:21:31,162 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:31,162 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 5900 < 9901. Dropping entry: {'loss_train': 1.9551041579246522, 'loss_val': 1.943744294643402, 'update_to_data': {'embed.weight': -4.369673728942871, 'fc1.weight': -3.1997594833374023, 'fc1.bias': -3.5101535320281982, 'lm_head.weight': -3.288142681121826, 'lm_head.bias': -3.4904685020446777}, '_timestamp': 1688977291.1619287}.
+2023-07-10 10:21:31,263 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:31,263 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 6000 < 9901. Dropping entry: {'loss_train': 1.9453130745887757, 'loss_val': 1.9592062211036683, 'update_to_data': {'embed.weight': -4.2711358070373535, 'fc1.weight': -3.153193712234497, 'fc1.bias': -3.392047882080078, 'lm_head.weight': -3.251157760620117, 'lm_head.bias': -3.4157721996307373}, '_timestamp': 1688977291.262877}.
+2023-07-10 10:21:31,376 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:31,376 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 6100 < 9901. Dropping entry: {'loss_train': 1.9630305123329164, 'loss_val': 1.9475854921340943, 'update_to_data': {'embed.weight': -4.286720275878906, 'fc1.weight': -3.152815341949463, 'fc1.bias': -3.344149589538574, 'lm_head.weight': -3.2667129039764404, 'lm_head.bias': -3.356189250946045}, '_timestamp': 1688977291.3759854}.
+2023-07-10 10:21:31,487 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:31,487 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 6200 < 9901. Dropping entry: {'loss_train': 1.9475359749794006, 'loss_val': 1.95734450340271, 'update_to_data': {'embed.weight': -4.344035625457764, 'fc1.weight': -3.178433656692505, 'fc1.bias': -3.465306520462036, 'lm_head.weight': -3.254551887512207, 'lm_head.bias': -3.348130464553833}, '_timestamp': 1688977291.4868062}.
+2023-07-10 10:21:31,592 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:31,592 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 6300 < 9901. Dropping entry: {'loss_train': 1.9491008019447327, 'loss_val': 1.945484893321991, 'update_to_data': {'embed.weight': -4.351572513580322, 'fc1.weight': -3.193904399871826, 'fc1.bias': -3.5151994228363037, 'lm_head.weight': -3.245999574661255, 'lm_head.bias': -3.426408052444458}, '_timestamp': 1688977291.591978}.
+2023-07-10 10:21:31,693 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:31,693 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 6400 < 9901. Dropping entry: {'loss_train': 1.946054289340973, 'loss_val': 1.9452733874320984, 'update_to_data': {'embed.weight': -4.345912933349609, 'fc1.weight': -3.142925262451172, 'fc1.bias': -3.3335373401641846, 'lm_head.weight': -3.202606439590454, 'lm_head.bias': -3.249819278717041}, '_timestamp': 1688977291.6932724}.
+2023-07-10 10:21:31,794 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:31,795 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 6500 < 9901. Dropping entry: {'loss_train': 1.9447605109214783, 'loss_val': 1.9379397344589233, 'update_to_data': {'embed.weight': -4.328296184539795, 'fc1.weight': -3.21565580368042, 'fc1.bias': -3.535647392272949, 'lm_head.weight': -3.289933681488037, 'lm_head.bias': -3.4705355167388916}, '_timestamp': 1688977291.7946439}.
+2023-07-10 10:21:31,894 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:31,895 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 6600 < 9901. Dropping entry: {'loss_train': 1.952838020324707, 'loss_val': 1.9341095638275148, 'update_to_data': {'embed.weight': -4.293710708618164, 'fc1.weight': -3.176510810852051, 'fc1.bias': -3.404874563217163, 'lm_head.weight': -3.2499961853027344, 'lm_head.bias': -3.3733534812927246}, '_timestamp': 1688977291.8946004}.
+2023-07-10 10:21:32,007 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:32,007 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 6700 < 9901. Dropping entry: {'loss_train': 1.9611385583877563, 'loss_val': 1.9550065469741822, 'update_to_data': {'embed.weight': -4.349753379821777, 'fc1.weight': -3.198420286178589, 'fc1.bias': -3.4837307929992676, 'lm_head.weight': -3.2858145236968994, 'lm_head.bias': -3.4512741565704346}, '_timestamp': 1688977292.006789}.
+2023-07-10 10:21:32,116 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:32,116 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 6800 < 9901. Dropping entry: {'loss_train': 1.94108172416687, 'loss_val': 1.945597128868103, 'update_to_data': {'embed.weight': -4.305241107940674, 'fc1.weight': -3.1910834312438965, 'fc1.bias': -3.5143449306488037, 'lm_head.weight': -3.247074842453003, 'lm_head.bias': -3.3909523487091064}, '_timestamp': 1688977292.115836}.
+2023-07-10 10:21:32,220 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:32,220 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 6900 < 9901. Dropping entry: {'loss_train': 1.9474431085586548, 'loss_val': 1.941429648399353, 'update_to_data': {'embed.weight': -4.292225360870361, 'fc1.weight': -3.1799144744873047, 'fc1.bias': -3.5079948902130127, 'lm_head.weight': -3.2821707725524902, 'lm_head.bias': -3.4011240005493164}, '_timestamp': 1688977292.2203126}.
+2023-07-10 10:21:32,335 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:32,335 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 7000 < 9901. Dropping entry: {'loss_train': 1.9544288110733032, 'loss_val': 1.9361231064796447, 'update_to_data': {'embed.weight': -4.345215320587158, 'fc1.weight': -3.2059710025787354, 'fc1.bias': -3.4218738079071045, 'lm_head.weight': -3.2664060592651367, 'lm_head.bias': -3.3504202365875244}, '_timestamp': 1688977292.3347414}.
+2023-07-10 10:21:32,439 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:32,439 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 7100 < 9901. Dropping entry: {'loss_train': 1.9540485811233521, 'loss_val': 1.9424728202819823, 'update_to_data': {'embed.weight': -4.298868179321289, 'fc1.weight': -3.1837196350097656, 'fc1.bias': -3.512164354324341, 'lm_head.weight': -3.2400245666503906, 'lm_head.bias': -3.364877462387085}, '_timestamp': 1688977292.438963}.
+2023-07-10 10:21:32,544 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:32,544 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 7200 < 9901. Dropping entry: {'loss_train': 1.9417007637023926, 'loss_val': 1.940396647453308, 'update_to_data': {'embed.weight': -4.284733295440674, 'fc1.weight': -3.177306890487671, 'fc1.bias': -3.4572277069091797, 'lm_head.weight': -3.2834248542785645, 'lm_head.bias': -3.423509359359741}, '_timestamp': 1688977292.5442615}.
+2023-07-10 10:21:32,648 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:32,649 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 7300 < 9901. Dropping entry: {'loss_train': 1.9548896646499634, 'loss_val': 1.9405683302879333, 'update_to_data': {'embed.weight': -4.34095573425293, 'fc1.weight': -3.1828718185424805, 'fc1.bias': -3.530467987060547, 'lm_head.weight': -3.2877867221832275, 'lm_head.bias': -3.493906259536743}, '_timestamp': 1688977292.6486728}.
+2023-07-10 10:21:32,753 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:32,753 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 7400 < 9901. Dropping entry: {'loss_train': 1.939407331943512, 'loss_val': 1.9400697803497315, 'update_to_data': {'embed.weight': -4.32023286819458, 'fc1.weight': -3.2059547901153564, 'fc1.bias': -3.546996831893921, 'lm_head.weight': -3.2760047912597656, 'lm_head.bias': -3.405863046646118}, '_timestamp': 1688977292.752867}.
+2023-07-10 10:21:32,858 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:32,858 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 7500 < 9901. Dropping entry: {'loss_train': 1.937996780872345, 'loss_val': 1.9426543879508973, 'update_to_data': {'embed.weight': -4.354133129119873, 'fc1.weight': -3.229778528213501, 'fc1.bias': -3.5388152599334717, 'lm_head.weight': -3.284337043762207, 'lm_head.bias': -3.425966262817383}, '_timestamp': 1688977292.8580685}.
+2023-07-10 10:21:32,960 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:32,960 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 7600 < 9901. Dropping entry: {'loss_train': 1.948636441230774, 'loss_val': 1.9378686761856079, 'update_to_data': {'embed.weight': -4.214290618896484, 'fc1.weight': -3.1374528408050537, 'fc1.bias': -3.385546922683716, 'lm_head.weight': -3.2598330974578857, 'lm_head.bias': -3.3654491901397705}, '_timestamp': 1688977292.9599824}.
+2023-07-10 10:21:33,066 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:33,066 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 7700 < 9901. Dropping entry: {'loss_train': 1.9396642541885376, 'loss_val': 1.939052848815918, 'update_to_data': {'embed.weight': -4.337984561920166, 'fc1.weight': -3.2102725505828857, 'fc1.bias': -3.435603618621826, 'lm_head.weight': -3.3220982551574707, 'lm_head.bias': -3.4367830753326416}, '_timestamp': 1688977293.0658233}.
+2023-07-10 10:21:33,174 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:33,174 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 7800 < 9901. Dropping entry: {'loss_train': 1.9472954559326172, 'loss_val': 1.9302558088302613, 'update_to_data': {'embed.weight': -4.316578388214111, 'fc1.weight': -3.1625640392303467, 'fc1.bias': -3.3594918251037598, 'lm_head.weight': -3.278165817260742, 'lm_head.bias': -3.4231836795806885}, '_timestamp': 1688977293.174029}.
+2023-07-10 10:21:33,278 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:33,278 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 7900 < 9901. Dropping entry: {'loss_train': 1.9363253808021545, 'loss_val': 1.9269835925102234, 'update_to_data': {'embed.weight': -4.3520426750183105, 'fc1.weight': -3.191535472869873, 'fc1.bias': -3.474867343902588, 'lm_head.weight': -3.265099287033081, 'lm_head.bias': -3.370490550994873}, '_timestamp': 1688977293.2780297}.
+2023-07-10 10:21:33,383 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:33,383 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 8000 < 9901. Dropping entry: {'loss_train': 1.936749107837677, 'loss_val': 1.9294969511032105, 'update_to_data': {'embed.weight': -4.307569980621338, 'fc1.weight': -3.1705286502838135, 'fc1.bias': -3.5034711360931396, 'lm_head.weight': -3.2641680240631104, 'lm_head.bias': -3.3844730854034424}, '_timestamp': 1688977293.3831525}.
+2023-07-10 10:21:33,494 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:33,494 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 8100 < 9901. Dropping entry: {'loss_train': 1.9281704998016358, 'loss_val': 1.9344750118255616, 'update_to_data': {'embed.weight': -4.2961297035217285, 'fc1.weight': -3.1890628337860107, 'fc1.bias': -3.475879669189453, 'lm_head.weight': -3.2849340438842773, 'lm_head.bias': -3.491986036300659}, '_timestamp': 1688977293.4938676}.
+2023-07-10 10:21:33,592 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:33,592 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 8200 < 9901. Dropping entry: {'loss_train': 1.935055685043335, 'loss_val': 1.9303351378440856, 'update_to_data': {'embed.weight': -4.333549499511719, 'fc1.weight': -3.1716935634613037, 'fc1.bias': -3.4594197273254395, 'lm_head.weight': -3.275756597518921, 'lm_head.bias': -3.44368839263916}, '_timestamp': 1688977293.592318}.
+2023-07-10 10:21:33,700 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:33,700 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 8300 < 9901. Dropping entry: {'loss_train': 1.9369380068778992, 'loss_val': 1.9224766039848327, 'update_to_data': {'embed.weight': -4.256005764007568, 'fc1.weight': -3.1624112129211426, 'fc1.bias': -3.3962562084198, 'lm_head.weight': -3.251176118850708, 'lm_head.bias': -3.3414111137390137}, '_timestamp': 1688977293.6998696}.
+2023-07-10 10:21:33,803 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:33,803 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 8400 < 9901. Dropping entry: {'loss_train': 1.9376235866546632, 'loss_val': 1.9334897112846374, 'update_to_data': {'embed.weight': -4.296645641326904, 'fc1.weight': -3.1801295280456543, 'fc1.bias': -3.4064228534698486, 'lm_head.weight': -3.2369329929351807, 'lm_head.bias': -3.2984561920166016}, '_timestamp': 1688977293.8035033}.
+2023-07-10 10:21:33,902 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:33,902 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 8500 < 9901. Dropping entry: {'loss_train': 1.9255152130126953, 'loss_val': 1.93878657579422, 'update_to_data': {'embed.weight': -4.30180025100708, 'fc1.weight': -3.1744494438171387, 'fc1.bias': -3.447650909423828, 'lm_head.weight': -3.3002545833587646, 'lm_head.bias': -3.4716029167175293}, '_timestamp': 1688977293.9022613}.
+2023-07-10 10:21:34,001 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:34,001 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 8600 < 9901. Dropping entry: {'loss_train': 1.9335994577407838, 'loss_val': 1.928304204940796, 'update_to_data': {'embed.weight': -4.2532429695129395, 'fc1.weight': -3.164734363555908, 'fc1.bias': -3.4711127281188965, 'lm_head.weight': -3.2581980228424072, 'lm_head.bias': -3.4041152000427246}, '_timestamp': 1688977294.000803}.
+2023-07-10 10:21:34,099 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:34,099 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 8700 < 9901. Dropping entry: {'loss_train': 1.9319382619857788, 'loss_val': 1.9270512914657594, 'update_to_data': {'embed.weight': -4.305751323699951, 'fc1.weight': -3.207442045211792, 'fc1.bias': -3.6203196048736572, 'lm_head.weight': -3.327664613723755, 'lm_head.bias': -3.5274271965026855}, '_timestamp': 1688977294.0994618}.
+2023-07-10 10:21:34,204 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:34,204 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 8800 < 9901. Dropping entry: {'loss_train': 1.9406862783432006, 'loss_val': 1.9334474802017212, 'update_to_data': {'embed.weight': -4.315057277679443, 'fc1.weight': -3.1854734420776367, 'fc1.bias': -3.424908399581909, 'lm_head.weight': -3.3011064529418945, 'lm_head.bias': -3.454505443572998}, '_timestamp': 1688977294.2042637}.
+2023-07-10 10:21:34,309 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:34,309 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 8900 < 9901. Dropping entry: {'loss_train': 1.9361095380783082, 'loss_val': 1.9270711612701417, 'update_to_data': {'embed.weight': -4.346547603607178, 'fc1.weight': -3.1946189403533936, 'fc1.bias': -3.590413808822632, 'lm_head.weight': -3.278679132461548, 'lm_head.bias': -3.4966318607330322}, '_timestamp': 1688977294.3093488}.
+2023-07-10 10:21:34,407 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:34,407 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 9000 < 9901. Dropping entry: {'loss_train': 1.925796732902527, 'loss_val': 1.9310408806800843, 'update_to_data': {'embed.weight': -4.312470436096191, 'fc1.weight': -3.1811583042144775, 'fc1.bias': -3.5862457752227783, 'lm_head.weight': -3.2932004928588867, 'lm_head.bias': -3.498286485671997}, '_timestamp': 1688977294.40735}.
+2023-07-10 10:21:34,506 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:34,506 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 9100 < 9901. Dropping entry: {'loss_train': 1.9283023428916932, 'loss_val': 1.932027859687805, 'update_to_data': {'embed.weight': -4.361648082733154, 'fc1.weight': -3.217825174331665, 'fc1.bias': -3.5253844261169434, 'lm_head.weight': -3.3085474967956543, 'lm_head.bias': -3.4794681072235107}, '_timestamp': 1688977294.5061944}.
+2023-07-10 10:21:34,605 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:34,605 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 9200 < 9901. Dropping entry: {'loss_train': 1.9267019486427308, 'loss_val': 1.92980651140213, 'update_to_data': {'embed.weight': -4.33237361907959, 'fc1.weight': -3.168238639831543, 'fc1.bias': -3.5138111114501953, 'lm_head.weight': -3.2709224224090576, 'lm_head.bias': -3.3978168964385986}, '_timestamp': 1688977294.6048994}.
+2023-07-10 10:21:34,703 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:34,703 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 9300 < 9901. Dropping entry: {'loss_train': 1.9201628136634827, 'loss_val': 1.9161750721931456, 'update_to_data': {'embed.weight': -4.293403148651123, 'fc1.weight': -3.1784870624542236, 'fc1.bias': -3.4065897464752197, 'lm_head.weight': -3.2444257736206055, 'lm_head.bias': -3.345996856689453}, '_timestamp': 1688977294.7034261}.
+2023-07-10 10:21:34,807 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:34,807 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 9400 < 9901. Dropping entry: {'loss_train': 1.9333329057693482, 'loss_val': 1.9262844800949097, 'update_to_data': {'embed.weight': -4.2889084815979, 'fc1.weight': -3.1698524951934814, 'fc1.bias': -3.4753785133361816, 'lm_head.weight': -3.2687182426452637, 'lm_head.bias': -3.404965877532959}, '_timestamp': 1688977294.8068986}.
+2023-07-10 10:21:34,906 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:34,906 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 9500 < 9901. Dropping entry: {'loss_train': 1.929231882095337, 'loss_val': 1.9342549657821655, 'update_to_data': {'embed.weight': -4.308603763580322, 'fc1.weight': -3.160734176635742, 'fc1.bias': -3.462315082550049, 'lm_head.weight': -3.219939947128296, 'lm_head.bias': -3.306886672973633}, '_timestamp': 1688977294.905926}.
+2023-07-10 10:21:35,005 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:35,005 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 9600 < 9901. Dropping entry: {'loss_train': 1.9202259182929993, 'loss_val': 1.9266313600540161, 'update_to_data': {'embed.weight': -4.3015971183776855, 'fc1.weight': -3.1824729442596436, 'fc1.bias': -3.4795961380004883, 'lm_head.weight': -3.300546407699585, 'lm_head.bias': -3.4721457958221436}, '_timestamp': 1688977295.0049458}.
+2023-07-10 10:21:35,108 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:35,108 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 9700 < 9901. Dropping entry: {'loss_train': 1.924494822025299, 'loss_val': 1.922777636051178, 'update_to_data': {'embed.weight': -4.3035173416137695, 'fc1.weight': -3.182330369949341, 'fc1.bias': -3.5137712955474854, 'lm_head.weight': -3.2948596477508545, 'lm_head.bias': -3.3833682537078857}, '_timestamp': 1688977295.1080484}.
+2023-07-10 10:21:35,216 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:35,216 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 9800 < 9901. Dropping entry: {'loss_train': 1.9201641440391541, 'loss_val': 1.9234079790115357, 'update_to_data': {'embed.weight': -4.297515392303467, 'fc1.weight': -3.172358274459839, 'fc1.bias': -3.5150837898254395, 'lm_head.weight': -3.289736032485962, 'lm_head.bias': -3.544862985610962}, '_timestamp': 1688977295.216125}.
+2023-07-10 10:21:35,315 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:35,315 WARNING HandlerThread:7645 [handler.py:handle_request_partial_history():553] Step 9900 < 9901. Dropping entry: {'loss_train': 1.9333814311027526, 'loss_val': 1.9268956589698791, 'update_to_data': {'embed.weight': -4.27836275100708, 'fc1.weight': -3.1785266399383545, 'fc1.bias': -3.539015054702759, 'lm_head.weight': -3.270404815673828, 'lm_head.bias': -3.516869068145752}, '_timestamp': 1688977295.3151746}.
+2023-07-10 10:21:35,386 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-10 10:21:35,386 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: pause
+2023-07-10 10:21:35,386 INFO    HandlerThread:7645 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-07-10 10:21:35,386 DEBUG   SenderThread:7645 [sender.py:send():369] send: history
+2023-07-10 10:21:35,386 INFO    HandlerThread:7645 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-10 10:21:35,386 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: summary_record
+2023-07-10 10:21:35,387 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-10 10:21:35,387 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-10 10:21:35,387 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-10 10:21:35,387 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-10 10:21:35,388 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined disk monitor
+2023-07-10 10:21:35,388 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:21:35,454 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-10 10:21:35,454 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined memory monitor
+2023-07-10 10:21:35,454 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined network monitor
+2023-07-10 10:21:35,455 DEBUG   SenderThread:7645 [sender.py:send():369] send: stats
+2023-07-10 10:21:35,787 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:21:36,455 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:21:38,789 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/output.log
+2023-07-10 10:21:39,931 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:21:39,932 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:21:42,132 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:21:47,133 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:21:52,134 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:21:54,932 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:21:54,934 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:21:57,895 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:22:02,896 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:22:07,897 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:22:09,932 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:22:09,934 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:22:13,480 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:22:18,480 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:22:23,481 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:22:24,932 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:22:24,934 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:22:29,476 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:22:34,477 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:22:39,478 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:22:39,932 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:22:39,934 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:22:44,625 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:22:49,626 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:22:54,627 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:22:54,933 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:22:54,934 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:22:59,781 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:23:04,782 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:23:09,783 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:23:09,932 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-10 10:23:09,932 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: stop_status
+2023-07-10 10:23:15,304 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:23:16,506 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: resume
+2023-07-10 10:23:16,506 INFO    HandlerThread:7645 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-07-10 10:23:16,507 INFO    HandlerThread:7645 [system_monitor.py:start():181] Starting system monitor
+2023-07-10 10:23:16,507 INFO    SystemMonitor:7645 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-10 10:23:16,508 DEBUG   SenderThread:7645 [sender.py:send():369] send: telemetry
+2023-07-10 10:23:16,508 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started cpu monitoring
+2023-07-10 10:23:16,508 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started disk monitoring
+2023-07-10 10:23:16,508 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started gpu monitoring
+2023-07-10 10:23:16,509 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started memory monitoring
+2023-07-10 10:23:16,510 INFO    SystemMonitor:7645 [interfaces.py:start():190] Started network monitoring
+2023-07-10 10:23:16,510 DEBUG   SenderThread:7645 [sender.py:send():369] send: exit
+2023-07-10 10:23:16,511 INFO    SenderThread:7645 [sender.py:send_exit():574] handling exit code: 0
+2023-07-10 10:23:16,511 INFO    SenderThread:7645 [sender.py:send_exit():576] handling runtime: 23
+2023-07-10 10:23:16,514 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:23:16,514 INFO    SenderThread:7645 [sender.py:send_exit():582] send defer
+2023-07-10 10:23:16,514 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:16,514 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 0
+2023-07-10 10:23:16,514 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:16,515 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-07-10 10:23:16,515 INFO    SenderThread:7645 [sender.py:transition_state():602] send defer: 1
+2023-07-10 10:23:16,515 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:16,515 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 1
+2023-07-10 10:23:16,515 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:16,515 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-07-10 10:23:16,515 INFO    SenderThread:7645 [sender.py:transition_state():602] send defer: 2
+2023-07-10 10:23:16,515 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:16,515 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 2
+2023-07-10 10:23:16,515 INFO    HandlerThread:7645 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-10 10:23:16,516 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-10 10:23:16,516 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined disk monitor
+2023-07-10 10:23:16,516 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-10 10:23:16,516 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-10 10:23:16,516 DEBUG   SystemMonitor:7645 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-10 10:23:16,576 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-10 10:23:16,576 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined memory monitor
+2023-07-10 10:23:16,576 INFO    HandlerThread:7645 [interfaces.py:finish():202] Joined network monitor
+2023-07-10 10:23:16,577 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:16,577 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-07-10 10:23:16,577 INFO    SenderThread:7645 [sender.py:transition_state():602] send defer: 3
+2023-07-10 10:23:16,577 DEBUG   SenderThread:7645 [sender.py:send():369] send: stats
+2023-07-10 10:23:16,577 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:16,577 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 3
+2023-07-10 10:23:16,577 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:16,577 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-07-10 10:23:16,577 INFO    SenderThread:7645 [sender.py:transition_state():602] send defer: 4
+2023-07-10 10:23:16,577 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:16,577 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 4
+2023-07-10 10:23:16,578 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:16,578 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-07-10 10:23:16,578 INFO    SenderThread:7645 [sender.py:transition_state():602] send defer: 5
+2023-07-10 10:23:16,578 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:16,578 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 5
+2023-07-10 10:23:16,578 DEBUG   SenderThread:7645 [sender.py:send():369] send: summary
+2023-07-10 10:23:16,578 INFO    SenderThread:7645 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-10 10:23:16,578 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:16,578 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-07-10 10:23:16,578 INFO    SenderThread:7645 [sender.py:transition_state():602] send defer: 6
+2023-07-10 10:23:16,578 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:16,578 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 6
+2023-07-10 10:23:16,579 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:16,579 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-07-10 10:23:16,581 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: status_report
+2023-07-10 10:23:16,838 INFO    Thread-12 :7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:23:17,022 INFO    SenderThread:7645 [sender.py:transition_state():602] send defer: 7
+2023-07-10 10:23:17,023 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:17,023 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 7
+2023-07-10 10:23:17,024 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:17,024 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 7
+2023-07-10 10:23:17,510 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-10 10:23:17,816 INFO    SenderThread:7645 [sender.py:transition_state():602] send defer: 8
+2023-07-10 10:23:17,817 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: poll_exit
+2023-07-10 10:23:17,817 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:17,817 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 8
+2023-07-10 10:23:17,818 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:17,819 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 8
+2023-07-10 10:23:17,819 INFO    SenderThread:7645 [job_builder.py:build():240] Attempting to build job artifact
+2023-07-10 10:23:17,819 INFO    SenderThread:7645 [job_builder.py:build():259] run is notebook based run
+2023-07-10 10:23:17,819 INFO    SenderThread:7645 [job_builder.py:build():274] no source found
+2023-07-10 10:23:17,820 INFO    SenderThread:7645 [sender.py:transition_state():602] send defer: 9
+2023-07-10 10:23:17,820 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:17,820 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 9
+2023-07-10 10:23:17,821 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:17,821 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 9
+2023-07-10 10:23:17,821 INFO    SenderThread:7645 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-07-10 10:23:17,839 INFO    SenderThread:7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/output.log
+2023-07-10 10:23:17,839 INFO    SenderThread:7645 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/config.yaml
+2023-07-10 10:23:17,840 INFO    SenderThread:7645 [dir_watcher.py:finish():389] scan: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files
+2023-07-10 10:23:17,840 INFO    SenderThread:7645 [dir_watcher.py:finish():403] scan save: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-metadata.json wandb-metadata.json
+2023-07-10 10:23:17,840 INFO    SenderThread:7645 [dir_watcher.py:finish():403] scan save: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/output.log output.log
+2023-07-10 10:23:17,841 INFO    SenderThread:7645 [dir_watcher.py:finish():403] scan save: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/config.yaml config.yaml
+2023-07-10 10:23:17,841 INFO    SenderThread:7645 [dir_watcher.py:finish():403] scan save: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/conda-environment.yaml conda-environment.yaml
+2023-07-10 10:23:17,842 INFO    SenderThread:7645 [dir_watcher.py:finish():403] scan save: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json wandb-summary.json
+2023-07-10 10:23:17,847 INFO    SenderThread:7645 [dir_watcher.py:finish():403] scan save: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/requirements.txt requirements.txt
+2023-07-10 10:23:17,853 INFO    SenderThread:7645 [sender.py:transition_state():602] send defer: 10
+2023-07-10 10:23:17,857 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:17,857 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 10
+2023-07-10 10:23:17,858 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:17,858 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 10
+2023-07-10 10:23:17,858 INFO    SenderThread:7645 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-10 10:23:18,511 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-10 10:23:18,511 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: poll_exit
+2023-07-10 10:23:19,071 INFO    wandb-upload_0:7645 [upload_job.py:push():133] Uploaded file /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/output.log
+2023-07-10 10:23:19,511 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-10 10:23:19,511 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: poll_exit
+2023-07-10 10:23:20,511 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-10 10:23:20,512 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: poll_exit
+2023-07-10 10:23:20,590 INFO    wandb-upload_2:7645 [upload_job.py:push():133] Uploaded file /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/conda-environment.yaml
+2023-07-10 10:23:20,591 INFO    wandb-upload_3:7645 [upload_job.py:push():133] Uploaded file /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/wandb-summary.json
+2023-07-10 10:23:21,512 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-10 10:23:21,513 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: poll_exit
+2023-07-10 10:23:21,914 INFO    wandb-upload_4:7645 [upload_job.py:push():133] Uploaded file /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/requirements.txt
+2023-07-10 10:23:21,917 INFO    wandb-upload_1:7645 [upload_job.py:push():133] Uploaded file /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/files/config.yaml
+2023-07-10 10:23:22,117 INFO    Thread-11 (_thread_body):7645 [sender.py:transition_state():602] send defer: 11
+2023-07-10 10:23:22,117 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:22,118 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 11
+2023-07-10 10:23:22,118 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:22,118 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 11
+2023-07-10 10:23:22,118 INFO    SenderThread:7645 [file_pusher.py:join():164] waiting for file pusher
+2023-07-10 10:23:22,118 INFO    SenderThread:7645 [sender.py:transition_state():602] send defer: 12
+2023-07-10 10:23:22,118 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:22,118 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 12
+2023-07-10 10:23:22,119 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:22,119 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 12
+2023-07-10 10:23:22,513 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-10 10:23:23,002 INFO    SenderThread:7645 [sender.py:transition_state():602] send defer: 13
+2023-07-10 10:23:23,002 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: poll_exit
+2023-07-10 10:23:23,003 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:23,003 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 13
+2023-07-10 10:23:23,004 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:23,004 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 13
+2023-07-10 10:23:23,004 INFO    SenderThread:7645 [sender.py:transition_state():602] send defer: 14
+2023-07-10 10:23:23,004 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: defer
+2023-07-10 10:23:23,004 INFO    HandlerThread:7645 [handler.py:handle_request_defer():170] handle defer: 14
+2023-07-10 10:23:23,005 DEBUG   SenderThread:7645 [sender.py:send():369] send: final
+2023-07-10 10:23:23,005 DEBUG   SenderThread:7645 [sender.py:send():369] send: footer
+2023-07-10 10:23:23,005 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: defer
+2023-07-10 10:23:23,006 INFO    SenderThread:7645 [sender.py:send_request_defer():598] handle sender defer: 14
+2023-07-10 10:23:23,007 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-10 10:23:23,008 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: server_info
+2023-07-10 10:23:23,008 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: get_summary
+2023-07-10 10:23:23,009 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: sampled_history
+2023-07-10 10:23:23,011 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: poll_exit
+2023-07-10 10:23:23,012 DEBUG   SenderThread:7645 [sender.py:send_request():396] send_request: server_info
+2023-07-10 10:23:23,364 DEBUG   HandlerThread:7645 [handler.py:handle_request():144] handle_request: shutdown
+2023-07-10 10:23:23,364 INFO    HandlerThread:7645 [handler.py:finish():854] shutting down handler
+2023-07-10 10:23:24,012 INFO    WriterThread:7645 [datastore.py:close():298] close: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230710_101552-mik53ibs/run-mik53ibs.wandb
+2023-07-10 10:23:24,362 INFO    SenderThread:7645 [sender.py:finish():1526] shutting down sender
+2023-07-10 10:23:24,362 INFO    SenderThread:7645 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-10 10:23:24,362 INFO    SenderThread:7645 [file_pusher.py:join():164] waiting for file pusher
