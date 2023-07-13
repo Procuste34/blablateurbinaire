@@ -1,0 +1,14 @@
+wandb_version: 1
+
+batch_size:
+  value: 1024
+context_len:
+  value: 3
+embed_dim:
+  value: 32
+hidden_dim:
+  value: 50
+learning_rate:
+  value: 0.18530001412205796
+optimizer:
+  value: AdamW

@@ -1,0 +1,34 @@
+2023-07-13 23:29:10,395 INFO    Thread-84 (_run_job):29570 [wandb_setup.py:_flush():76] Current SDK version is 0.15.5
+2023-07-13 23:29:10,395 INFO    Thread-84 (_run_job):29570 [wandb_setup.py:_flush():76] Configure stats pid to 29570
+2023-07-13 23:29:10,395 INFO    Thread-84 (_run_job):29570 [wandb_setup.py:_flush():76] Loading settings from /home/alex/.config/wandb/settings
+2023-07-13 23:29:10,395 INFO    Thread-84 (_run_job):29570 [wandb_setup.py:_flush():76] Loading settings from /home/alex/Bureau/llm/blablateurbinaire/wandb/settings
+2023-07-13 23:29:10,395 INFO    Thread-84 (_run_job):29570 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'bengio-lm', 'entity': 'alexandretl', 'root_dir': '/home/alex/Bureau/llm/blablateurbinaire', 'run_id': 'adt75wi0', 'sweep_param_path': '/home/alex/Bureau/llm/blablateurbinaire/wandb/sweep-7sk5tr90/config-adt75wi0.yaml', 'sweep_id': '7sk5tr90'}
+2023-07-13 23:29:10,395 INFO    Thread-84 (_run_job):29570 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-07-13 23:29:10,395 INFO    Thread-84 (_run_job):29570 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'mlp_lm.py', 'program': '/home/alex/Bureau/llm/blablateurbinaire/mlp_lm.py'}
+2023-07-13 23:29:10,395 INFO    Thread-84 (_run_job):29570 [wandb_init.py:_log_setup():507] Logging user logs to /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_232910-adt75wi0/logs/debug.log
+2023-07-13 23:29:10,395 INFO    Thread-84 (_run_job):29570 [wandb_init.py:_log_setup():508] Logging internal logs to /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_232910-adt75wi0/logs/debug-internal.log
+2023-07-13 23:29:10,395 INFO    Thread-84 (_run_job):29570 [wandb_init.py:init():547] calling init triggers
+2023-07-13 23:29:10,395 INFO    Thread-84 (_run_job):29570 [wandb_init.py:init():554] wandb.init called with sweep_config: {'batch_size': 1024, 'context_len': 8, 'embed_dim': 16, 'hidden_dim': 500, 'learning_rate': 0.20509980958647647, 'optimizer': 'SGD_M'}
+config: {}
+2023-07-13 23:29:10,395 INFO    Thread-84 (_run_job):29570 [wandb_init.py:init():596] starting backend
+2023-07-13 23:29:10,395 INFO    Thread-84 (_run_job):29570 [wandb_init.py:init():600] setting up manager
+2023-07-13 23:29:10,398 INFO    Thread-84 (_run_job):29570 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-07-13 23:29:10,400 INFO    Thread-84 (_run_job):29570 [wandb_init.py:init():606] backend started and connected
+2023-07-13 23:29:10,403 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_config_callback():1281] config_cb None None {'batch_size': 1024, 'context_len': 8, 'embed_dim': 16, 'hidden_dim': 500, 'learning_rate': 0.20509980958647647, 'optimizer': 'SGD_M'}
+2023-07-13 23:29:10,403 INFO    Thread-84 (_run_job):29570 [wandb_init.py:init():705] updated telemetry
+2023-07-13 23:29:10,403 INFO    Thread-84 (_run_job):29570 [wandb_init.py:init():738] communicating run to backend with 60.0 second timeout
+2023-07-13 23:29:10,975 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_on_init():2173] communicating current version
+2023-07-13 23:29:11,124 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_on_init():2182] got version response 
+2023-07-13 23:29:11,124 INFO    Thread-84 (_run_job):29570 [wandb_init.py:init():789] starting run threads in backend
+2023-07-13 23:29:13,137 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_console_start():2152] atexit reg
+2023-07-13 23:29:13,137 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_redirect():2007] redirect: 3
+2023-07-13 23:29:13,137 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_redirect():2072] Wrapping output streams.
+2023-07-13 23:29:13,137 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_redirect():2097] Redirects installed.
+2023-07-13 23:29:13,138 INFO    Thread-84 (_run_job):29570 [wandb_init.py:init():830] run started, returning control to user process
+2023-07-13 23:29:33,306 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_finish():1887] finishing run alexandretl/bengio-lm/adt75wi0
+2023-07-13 23:29:33,306 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_atexit_cleanup():2121] got exitcode: 0
+2023-07-13 23:29:33,306 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_restore():2104] restore
+2023-07-13 23:29:33,306 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_restore():2110] restore done
+2023-07-13 23:29:38,940 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_footer_history_summary_info():3464] rendering history
+2023-07-13 23:29:38,940 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_footer_history_summary_info():3496] rendering summary
+2023-07-13 23:29:38,945 INFO    Thread-84 (_run_job):29570 [wandb_run.py:_footer_sync_info():3423] logging synced files

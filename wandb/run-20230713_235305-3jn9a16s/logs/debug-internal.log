@@ -1,0 +1,186 @@
+2023-07-13 23:53:05,979 INFO    StreamThr :32904 [internal.py:wandb_internal():86] W&B internal server running at pid: 32904, started at: 2023-07-13 23:53:05.979376
+2023-07-13 23:53:05,981 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: status
+2023-07-13 23:53:05,982 INFO    WriterThread:32904 [datastore.py:open_for_write():85] open: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/run-3jn9a16s.wandb
+2023-07-13 23:53:05,983 DEBUG   SenderThread:32904 [sender.py:send():369] send: header
+2023-07-13 23:53:05,983 DEBUG   SenderThread:32904 [sender.py:send():369] send: run
+2023-07-13 23:53:06,588 INFO    SenderThread:32904 [dir_watcher.py:__init__():211] watching files in: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files
+2023-07-13 23:53:06,588 INFO    SenderThread:32904 [sender.py:_start_run_threads():1100] run started: 3jn9a16s with start time 1689285185.979909
+2023-07-13 23:53:06,588 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: summary_record
+2023-07-13 23:53:06,588 INFO    SenderThread:32904 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-13 23:53:06,589 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: check_version
+2023-07-13 23:53:06,589 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: check_version
+2023-07-13 23:53:06,762 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: run_start
+2023-07-13 23:53:06,793 DEBUG   HandlerThread:32904 [system_info.py:__init__():31] System info init
+2023-07-13 23:53:06,793 DEBUG   HandlerThread:32904 [system_info.py:__init__():46] System info init done
+2023-07-13 23:53:06,793 INFO    HandlerThread:32904 [system_monitor.py:start():181] Starting system monitor
+2023-07-13 23:53:06,793 INFO    SystemMonitor:32904 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-13 23:53:06,793 INFO    HandlerThread:32904 [system_monitor.py:probe():201] Collecting system info
+2023-07-13 23:53:06,793 INFO    SystemMonitor:32904 [interfaces.py:start():190] Started cpu monitoring
+2023-07-13 23:53:06,794 INFO    SystemMonitor:32904 [interfaces.py:start():190] Started disk monitoring
+2023-07-13 23:53:06,795 INFO    SystemMonitor:32904 [interfaces.py:start():190] Started gpu monitoring
+2023-07-13 23:53:06,795 INFO    SystemMonitor:32904 [interfaces.py:start():190] Started memory monitoring
+2023-07-13 23:53:06,796 INFO    SystemMonitor:32904 [interfaces.py:start():190] Started network monitoring
+2023-07-13 23:53:06,817 DEBUG   HandlerThread:32904 [system_info.py:probe():195] Probing system
+2023-07-13 23:53:06,817 DEBUG   HandlerThread:32904 [system_info.py:probe():240] Probing system done
+2023-07-13 23:53:06,817 DEBUG   HandlerThread:32904 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-76-generic-x86_64-with-glibc2.31', 'python': '3.11.3', 'heartbeatAt': '2023-07-13T21:53:06.817911', 'startedAt': '2023-07-13T21:53:05.974331', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/alex/Bureau/llm/blablateurbinaire/mlp_lm.py', 'codePath': 'mlp_lm.py', 'host': 'alexJAX', 'username': 'alex', 'executable': '/home/alex/miniconda3/envs/torch23/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 3.2204166666666665, 'min': 800.0, 'max': 4600.0}, 'cpu_freq_per_core': [{'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}, {'current': 3.445, 'min': 800.0, 'max': 4600.0}, {'current': 3.2, 'min': 800.0, 'max': 4600.0}], 'disk': {'total': 219.00129318237305, 'used': 61.127098083496094}, 'gpu': 'NVIDIA GeForce GTX 1080 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 15.549358367919922}}
+2023-07-13 23:53:06,818 INFO    HandlerThread:32904 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-13 23:53:06,818 INFO    HandlerThread:32904 [system_monitor.py:probe():214] Publishing system info
+2023-07-13 23:53:06,818 DEBUG   HandlerThread:32904 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-13 23:53:06,818 DEBUG   HandlerThread:32904 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-13 23:53:06,818 DEBUG   HandlerThread:32904 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-13 23:53:07,589 INFO    Thread-12 :32904 [dir_watcher.py:_on_file_created():272] file/dir created: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/conda-environment.yaml
+2023-07-13 23:53:07,589 INFO    Thread-12 :32904 [dir_watcher.py:_on_file_created():272] file/dir created: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/wandb-summary.json
+2023-07-13 23:53:07,589 INFO    Thread-12 :32904 [dir_watcher.py:_on_file_created():272] file/dir created: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/requirements.txt
+2023-07-13 23:53:08,733 DEBUG   HandlerThread:32904 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-13 23:53:08,733 INFO    HandlerThread:32904 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-13 23:53:08,736 DEBUG   SenderThread:32904 [sender.py:send():369] send: files
+2023-07-13 23:53:08,736 INFO    SenderThread:32904 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-07-13 23:53:08,741 DEBUG   SenderThread:32904 [sender.py:send():369] send: telemetry
+2023-07-13 23:53:08,786 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-13 23:53:08,786 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: stop_status
+2023-07-13 23:53:09,444 INFO    wandb-upload_0:32904 [upload_job.py:push():133] Uploaded file /tmp/tmp50wcb6eqwandb/bq1d9ome-wandb-metadata.json
+2023-07-13 23:53:09,589 INFO    Thread-12 :32904 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/conda-environment.yaml
+2023-07-13 23:53:09,589 INFO    Thread-12 :32904 [dir_watcher.py:_on_file_created():272] file/dir created: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/wandb-metadata.json
+2023-07-13 23:53:11,024 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: status_report
+2023-07-13 23:53:16,024 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: status_report
+2023-07-13 23:53:21,025 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: status_report
+2023-07-13 23:53:23,740 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-13 23:53:23,740 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: stop_status
+2023-07-13 23:53:26,988 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: status_report
+2023-07-13 23:53:30,386 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-13 23:53:30,387 DEBUG   SenderThread:32904 [sender.py:send():369] send: history
+2023-07-13 23:53:30,387 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: summary_record
+2023-07-13 23:53:30,388 INFO    SenderThread:32904 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-13 23:53:30,388 DEBUG   SenderThread:32904 [sender.py:send():369] send: telemetry
+2023-07-13 23:53:30,388 DEBUG   SenderThread:32904 [sender.py:send():369] send: exit
+2023-07-13 23:53:30,388 INFO    SenderThread:32904 [sender.py:send_exit():574] handling exit code: 0
+2023-07-13 23:53:30,388 INFO    SenderThread:32904 [sender.py:send_exit():576] handling runtime: 23
+2023-07-13 23:53:30,389 INFO    SenderThread:32904 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-13 23:53:30,389 INFO    SenderThread:32904 [sender.py:send_exit():582] send defer
+2023-07-13 23:53:30,389 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:30,389 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 0
+2023-07-13 23:53:30,389 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:30,389 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-07-13 23:53:30,389 INFO    SenderThread:32904 [sender.py:transition_state():602] send defer: 1
+2023-07-13 23:53:30,389 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:30,389 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 1
+2023-07-13 23:53:30,389 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:30,389 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-07-13 23:53:30,389 INFO    SenderThread:32904 [sender.py:transition_state():602] send defer: 2
+2023-07-13 23:53:30,389 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:30,389 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 2
+2023-07-13 23:53:30,389 INFO    HandlerThread:32904 [system_monitor.py:finish():190] Stopping system monitor
+2023-07-13 23:53:30,390 DEBUG   SystemMonitor:32904 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-13 23:53:30,390 INFO    HandlerThread:32904 [interfaces.py:finish():202] Joined cpu monitor
+2023-07-13 23:53:30,390 DEBUG   SystemMonitor:32904 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-13 23:53:30,390 INFO    HandlerThread:32904 [interfaces.py:finish():202] Joined disk monitor
+2023-07-13 23:53:30,390 DEBUG   SystemMonitor:32904 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-13 23:53:30,445 INFO    HandlerThread:32904 [interfaces.py:finish():202] Joined gpu monitor
+2023-07-13 23:53:30,445 INFO    HandlerThread:32904 [interfaces.py:finish():202] Joined memory monitor
+2023-07-13 23:53:30,445 INFO    HandlerThread:32904 [interfaces.py:finish():202] Joined network monitor
+2023-07-13 23:53:30,446 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:30,446 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-07-13 23:53:30,446 INFO    SenderThread:32904 [sender.py:transition_state():602] send defer: 3
+2023-07-13 23:53:30,446 DEBUG   SenderThread:32904 [sender.py:send():369] send: stats
+2023-07-13 23:53:30,446 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:30,446 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 3
+2023-07-13 23:53:30,446 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:30,446 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-07-13 23:53:30,446 INFO    SenderThread:32904 [sender.py:transition_state():602] send defer: 4
+2023-07-13 23:53:30,446 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:30,446 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 4
+2023-07-13 23:53:30,446 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:30,446 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-07-13 23:53:30,446 INFO    SenderThread:32904 [sender.py:transition_state():602] send defer: 5
+2023-07-13 23:53:30,446 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:30,446 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 5
+2023-07-13 23:53:30,447 DEBUG   SenderThread:32904 [sender.py:send():369] send: summary
+2023-07-13 23:53:30,447 INFO    SenderThread:32904 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-07-13 23:53:30,447 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:30,447 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-07-13 23:53:30,447 INFO    SenderThread:32904 [sender.py:transition_state():602] send defer: 6
+2023-07-13 23:53:30,447 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:30,447 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 6
+2023-07-13 23:53:30,447 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:30,447 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-07-13 23:53:30,449 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: status_report
+2023-07-13 23:53:30,593 INFO    Thread-12 :32904 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/wandb-summary.json
+2023-07-13 23:53:30,593 INFO    Thread-12 :32904 [dir_watcher.py:_on_file_created():272] file/dir created: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/output.log
+2023-07-13 23:53:31,387 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-13 23:53:32,593 INFO    Thread-12 :32904 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/output.log
+2023-07-13 23:53:36,389 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-13 23:53:41,390 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-13 23:53:43,960 INFO    SenderThread:32904 [sender.py:transition_state():602] send defer: 7
+2023-07-13 23:53:43,960 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: poll_exit
+2023-07-13 23:53:43,961 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:43,961 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 7
+2023-07-13 23:53:43,961 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: status_report
+2023-07-13 23:53:43,961 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:43,961 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 7
+2023-07-13 23:53:44,378 INFO    SenderThread:32904 [sender.py:transition_state():602] send defer: 8
+2023-07-13 23:53:44,379 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:44,379 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 8
+2023-07-13 23:53:44,380 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:44,380 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 8
+2023-07-13 23:53:44,380 INFO    SenderThread:32904 [sender.py:transition_state():602] send defer: 9
+2023-07-13 23:53:44,380 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:44,380 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 9
+2023-07-13 23:53:44,381 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:44,381 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 9
+2023-07-13 23:53:44,381 INFO    SenderThread:32904 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-07-13 23:53:44,595 INFO    SenderThread:32904 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/output.log
+2023-07-13 23:53:44,595 INFO    SenderThread:32904 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/config.yaml
+2023-07-13 23:53:44,596 INFO    SenderThread:32904 [dir_watcher.py:finish():389] scan: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files
+2023-07-13 23:53:44,596 INFO    SenderThread:32904 [dir_watcher.py:finish():403] scan save: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/wandb-metadata.json wandb-metadata.json
+2023-07-13 23:53:44,596 INFO    SenderThread:32904 [dir_watcher.py:finish():403] scan save: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/output.log output.log
+2023-07-13 23:53:44,596 INFO    SenderThread:32904 [dir_watcher.py:finish():403] scan save: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/config.yaml config.yaml
+2023-07-13 23:53:44,596 INFO    SenderThread:32904 [dir_watcher.py:finish():403] scan save: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/conda-environment.yaml conda-environment.yaml
+2023-07-13 23:53:44,596 INFO    SenderThread:32904 [dir_watcher.py:finish():403] scan save: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/wandb-summary.json wandb-summary.json
+2023-07-13 23:53:44,596 INFO    SenderThread:32904 [dir_watcher.py:finish():403] scan save: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/requirements.txt requirements.txt
+2023-07-13 23:53:44,598 INFO    SenderThread:32904 [sender.py:transition_state():602] send defer: 10
+2023-07-13 23:53:44,600 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:44,600 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 10
+2023-07-13 23:53:44,608 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:44,608 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 10
+2023-07-13 23:53:44,608 INFO    SenderThread:32904 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-13 23:53:45,471 INFO    wandb-upload_2:32904 [upload_job.py:push():133] Uploaded file /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/config.yaml
+2023-07-13 23:53:45,695 INFO    wandb-upload_1:32904 [upload_job.py:push():133] Uploaded file /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/output.log
+2023-07-13 23:53:46,075 INFO    wandb-upload_4:32904 [upload_job.py:push():133] Uploaded file /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/requirements.txt
+2023-07-13 23:53:46,392 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-13 23:53:46,412 INFO    wandb-upload_3:32904 [upload_job.py:push():133] Uploaded file /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/wandb-summary.json
+2023-07-13 23:53:46,460 INFO    wandb-upload_0:32904 [upload_job.py:push():133] Uploaded file /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/files/conda-environment.yaml
+2023-07-13 23:53:46,661 INFO    Thread-11 (_thread_body):32904 [sender.py:transition_state():602] send defer: 11
+2023-07-13 23:53:46,662 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:46,662 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 11
+2023-07-13 23:53:46,663 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:46,663 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 11
+2023-07-13 23:53:46,663 INFO    SenderThread:32904 [file_pusher.py:join():164] waiting for file pusher
+2023-07-13 23:53:46,663 INFO    SenderThread:32904 [sender.py:transition_state():602] send defer: 12
+2023-07-13 23:53:46,664 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:46,664 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 12
+2023-07-13 23:53:46,665 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:46,665 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 12
+2023-07-13 23:53:47,668 INFO    SenderThread:32904 [sender.py:transition_state():602] send defer: 13
+2023-07-13 23:53:47,669 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:47,669 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 13
+2023-07-13 23:53:47,670 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:47,670 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 13
+2023-07-13 23:53:47,670 INFO    SenderThread:32904 [sender.py:transition_state():602] send defer: 14
+2023-07-13 23:53:47,671 DEBUG   SenderThread:32904 [sender.py:send():369] send: final
+2023-07-13 23:53:47,671 DEBUG   SenderThread:32904 [sender.py:send():369] send: footer
+2023-07-13 23:53:47,672 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: defer
+2023-07-13 23:53:47,672 INFO    HandlerThread:32904 [handler.py:handle_request_defer():170] handle defer: 14
+2023-07-13 23:53:47,672 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: defer
+2023-07-13 23:53:47,673 INFO    SenderThread:32904 [sender.py:send_request_defer():598] handle sender defer: 14
+2023-07-13 23:53:47,675 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: poll_exit
+2023-07-13 23:53:47,675 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: server_info
+2023-07-13 23:53:47,676 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: get_summary
+2023-07-13 23:53:47,676 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: sampled_history
+2023-07-13 23:53:47,678 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: poll_exit
+2023-07-13 23:53:47,679 DEBUG   SenderThread:32904 [sender.py:send_request():396] send_request: server_info
+2023-07-13 23:53:48,351 DEBUG   HandlerThread:32904 [handler.py:handle_request():144] handle_request: shutdown
+2023-07-13 23:53:48,351 INFO    HandlerThread:32904 [handler.py:finish():854] shutting down handler
+2023-07-13 23:53:48,678 INFO    WriterThread:32904 [datastore.py:close():298] close: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230713_235305-3jn9a16s/run-3jn9a16s.wandb
+2023-07-13 23:53:49,350 INFO    SenderThread:32904 [sender.py:finish():1526] shutting down sender
+2023-07-13 23:53:49,350 INFO    SenderThread:32904 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-13 23:53:49,350 INFO    SenderThread:32904 [file_pusher.py:join():164] waiting for file pusher
