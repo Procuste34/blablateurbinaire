@@ -1,0 +1,99 @@
+{
+    "os": "Linux-5.15.0-76-generic-x86_64-with-glibc2.31",
+    "python": "3.11.3",
+    "heartbeatAt": "2023-07-13T20:47:37.254273",
+    "startedAt": "2023-07-13T20:47:36.394575",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/alex/Bureau/llm/blablateurbinaire/mlp_lm.py",
+    "codePath": "mlp_lm.py",
+    "host": "alexJAX",
+    "username": "alex",
+    "executable": "/home/alex/miniconda3/envs/torch23/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3.208416666666667,
+        "min": 800.0,
+        "max": 4600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.301,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        }
+    ],
+    "disk": {
+        "total": 219.00129318237305,
+        "used": 61.13520050048828
+    },
+    "gpu": "NVIDIA GeForce GTX 1080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 15.549358367919922
+    }
+}

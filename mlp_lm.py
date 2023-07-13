@@ -31,8 +31,9 @@ def objective(config, wandb_log):
     model = BengioLM(get_voc_size(), context_len, embed_dim, hidden_dim)
     model.to(device)
 
+    start_time = time.time()
+
     if wandb_log:
-        start_time = time.time()
         wandb.watch(model, log="all")
 
     for update_num in range(N):
@@ -79,9 +80,20 @@ def objective(config, wandb_log):
 
     print("training throughput = {} examples/s".format(str(num_examples_processed/(end_time-start_time))))
 
+    with torch.no_grad():
+        val_loss_mean = 0
+        for _ in range(eval_iter):
+            Xb, Yb = get_batch(batch_size, 'val', device)
+            logits = model(Xb)
+
+            val_loss_mean += F.cross_entropy(logits, Yb).item()
+        val_loss_mean /= eval_iter
+
     if wandb_log:
         wandb.log({"training_throughput": num_examples_processed/(end_time-start_time)})
         wandb.log({"params_num": sum([p.numel() for p in model.parameters()])})
+
+    return val_loss_mean
 
 def run():
     config = {
@@ -94,13 +106,36 @@ def run():
 
     wandb.init(project="bengio_lm", config=config)
 
-    objective(config, True)
+    _ = objective(config, wandb_log=True)
     
     wandb.finish()
 
-def sweep():
-    return
-    
-run()
+def run_one_sweep():
+    wandb.init(project='bengio-lm')
+    val_loss = objective(wandb.config, wandb_log=False)
+    wandb.log({'final_val_loss': val_loss})
 
+def sweep():
+    sweep_configuration = {
+        'method': 'random',
+        'metric': 
+        {
+            'goal': 'minimize', 
+            'name': 'final_val_loss'
+            },
+        'parameters': 
+        {
+            'learning_rate': {'min': 0.0001, 'max': 0.3},
+            'batch_size': {'values': [1024]},
+            'embed_dim': {'values': [8, 16, 32, 64]},
+            'hidden_dim': {'values': [50, 100, 300, 500]},
+            'context_len': {'values': [3, 5, 8]}
+        }
+    }
+    
+    sweep_id = wandb.sweep(sweep=sweep_configuration, project='bengio-lm')
+    wandb.agent(sweep_id, function=run_one_sweep)
+
+#run()
+sweep()
 
