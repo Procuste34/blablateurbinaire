@@ -30,3 +30,4 @@ training throughput = 807393.4599090284 examples/s
         [ 5.6793, -2.0018, 10.4314,  ..., -4.0969, -4.1807, -3.6406],
         [ 0.4504, -4.7341,  3.9611,  ..., -4.1088, -4.2243, -4.3871]],
        device='cuda:0', grad_fn=<AddmmBackward0>))
+training throughput = 870199.4350204876 examples/s

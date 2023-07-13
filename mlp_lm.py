@@ -7,104 +7,100 @@ import time
 import wandb
 
 from data_handler_bengio import build_data, get_batch, get_voc_size
-
-context_len = 3
-
-lr = 0.03
-batch_size = 1024
-embed_dim = 16
-hidden_dim = 100
+from model import BengioLM
 
 N = 10000
 train_split = 0.9
 eval_interval = 500
 eval_iter = 50
 
-build_data('villes.txt', context_len=context_len, train_split=train_split)
-
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-class BengioLM(nn.Module):
-    def __init__(self):
-        super().__init__()
+def objective(config, wandb_log):
+    # train un model avec les HP config
+    # : config.keys = ['context_len', 'learning_rate', 'batch_size', 'embed_dim', 'hidden_dim', 'N']
 
-        self.embed = nn.Embedding(get_voc_size(), embed_dim)
-        self.fc1 = nn.Linear(context_len * embed_dim, hidden_dim)
+    context_len = config['context_len']
+    lr = config['learning_rate']
+    batch_size = config['batch_size']
+    embed_dim = config['embed_dim']
+    hidden_dim = config['hidden_dim']
 
-        self.lm_head = nn.Linear(hidden_dim, get_voc_size())
+    build_data('villes.txt', context_len=config['context_len'], train_split=train_split)
 
-    def forward(self, x):
-        x = self.embed(x).view(-1, context_len*embed_dim)
+    model = BengioLM(get_voc_size(), context_len, embed_dim, hidden_dim)
+    model.to(device)
 
-        z1 = self.fc1(x)
-        a1 = F.tanh(z1)
+    if wandb_log:
+        start_time = time.time()
+        wandb.watch(model, log="all")
 
-        logits = self.lm_head(a1)
+    for update_num in range(N):
+        Xb, Yb = get_batch(batch_size, 'train', device)
 
-        return logits
+        logits = model(Xb)
+
+        loss = F.cross_entropy(logits, Yb)
+
+        for p in model.parameters():
+            p.grad = None
+
+        loss.backward()
+
+        for p in model.parameters():
+            p.data += -lr * p.grad
+
+        # eval : track loss (train & val), update_to_data
+        if wandb_log and (update_num % eval_interval == 0):
+            to_log = {}
+
+            with torch.no_grad():
+                model.eval()
+                for split in ['train', 'val']:
+                    loss_mean = 0
+                    for i in range(eval_iter):
+                        Xb, Yb = get_batch(batch_size, split, device)
+                        logits = model(Xb)
+
+                        loss_mean += F.cross_entropy(logits, Yb).item()
+                    loss_mean /= eval_iter
+                    to_log["loss_" + split] = loss_mean
+                model.train()
+
+                scalars_dict = {}
+
+                for name, p in model.named_parameters():
+                    scalars_dict[name] = (lr*p.grad.std() / p.data.std()).log10().item()
+            
+            wandb.log(to_log | {"update_to_data": scalars_dict}, step=update_num)
+
+    end_time = time.time()
+    num_examples_processed = N * batch_size
+
+    print("training throughput = {} examples/s".format(str(num_examples_processed/(end_time-start_time))))
+
+    if wandb_log:
+        wandb.log({"training_throughput": num_examples_processed/(end_time-start_time)})
+        wandb.log({"params_num": sum([p.numel() for p in model.parameters()])})
+
+def run():
+    config = {
+               "learning_rate": 0.03,
+               "batch_size": 1024,
+               "embed_dim": 16,
+               "hidden_dim": 100,
+               "context_len": 3
+           }
+
+    wandb.init(project="bengio_lm", config=config)
+
+    objective(config, True)
     
-    def sample(self, prompt="", max_new_tokens=None):
-        return
+    wandb.finish()
+
+def sweep():
+    return
     
-wandb.init(project="bengio_lm",
-           config={
-               "learning_rate": lr,
-               "batch_size": batch_size,
-               "embed_dim": embed_dim,
-               "hidden_dim": hidden_dim,
-               "context_len": context_len
-           })
+run()
 
-model = BengioLM()
-model.to(device)
 
-start_time = time.time()
-wandb.watch(model, log="all")
-
-for update_num in range(N):
-    Xb, Yb = get_batch(batch_size, 'train', device)
-
-    logits = model(Xb)
-
-    loss = F.cross_entropy(logits, Yb)
-
-    for p in model.parameters():
-        p.grad = None
-
-    loss.backward()
-
-    for p in model.parameters():
-        p.data += -lr * p.grad
-
-    # eval : track loss (train & val), update_to_data
-    if update_num % eval_interval == 0:
-        to_log = {}
-
-        with torch.no_grad():
-            model.eval()
-            for split in ['train', 'val']:
-                loss_mean = 0
-                for i in range(eval_iter):
-                    Xb, Yb = get_batch(batch_size, split, device)
-                    logits = model(Xb)
-
-                    loss_mean += F.cross_entropy(logits, Yb).item()
-                loss_mean /= eval_iter
-                to_log["loss_" + split] = loss_mean
-            model.train()
-
-            scalars_dict = {}
-
-            for name, p in model.named_parameters():
-                scalars_dict[name] = (lr*p.grad.std() / p.data.std()).log10().item()
-        
-        wandb.log(to_log | {"update_to_data": scalars_dict}, step=update_num)
-
-end_time = time.time()
-num_examples_processed = N * batch_size
-
-print("training throughput = {} examples/s".format(str(num_examples_processed/(end_time-start_time))))
-wandb.log({"training_throughput": num_examples_processed/(end_time-start_time)})
-wandb.log({"params_num": sum([p.numel() for p in model.parameters()])})
-
-wandb.finish()

@@ -14,16 +14,16 @@ hidden_dim:
   value: 100
 context_len:
   desc: null
-  value: 5
+  value: 3
 _wandb:
   desc: null
   value:
     python_version: 3.11.3
     cli_version: 0.15.5
     framework: torch
-    is_jupyter_run: true
+    is_jupyter_run: false
     is_kaggle_kernel: false
-    start_time: 1689268733.147933
+    start_time: 1689278383.149221
     t:
       1:
       - 1
@@ -32,12 +32,9 @@ _wandb:
       - 1
       - 55
       3:
-      - 1
-      - 2
       - 16
       - 23
       4: 3.11.3
       5: 0.15.5
       8:
-      - 1
       - 5
