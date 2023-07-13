@@ -1,0 +1,44 @@
+wandb_version: 1
+
+batch_size:
+  desc: null
+  value: 1024
+context_len:
+  desc: null
+  value: 5
+embed_dim:
+  desc: null
+  value: 8
+hidden_dim:
+  desc: null
+  value: 50
+learning_rate:
+  desc: null
+  value: 0.29403609337395087
+optimizer:
+  desc: null
+  value: AdamW
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.3
+    cli_version: 0.15.5
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1689283115.713332
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 2
+      - 23
+      - 37
+      4: 3.11.3
+      5: 0.15.5
+      8:
+      - 5

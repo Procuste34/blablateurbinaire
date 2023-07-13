@@ -9,7 +9,7 @@ import wandb
 from data_handler_bengio import build_data, get_batch, get_voc_size
 from model import BengioLM
 
-N = 10000
+N = 20000
 train_split = 0.9
 eval_interval = 500
 eval_iter = 50
@@ -18,19 +18,29 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 
 def objective(config, wandb_log):
     # train un model avec les HP config
-    # : config.keys = ['context_len', 'learning_rate', 'batch_size', 'embed_dim', 'hidden_dim', 'N']
+    # : config.keys = ['context_len', 'learning_rate', 'batch_size', 'embed_dim', 'hidden_dim', 'optimizer']
 
     context_len = config['context_len']
     lr = config['learning_rate']
     batch_size = config['batch_size']
     embed_dim = config['embed_dim']
     hidden_dim = config['hidden_dim']
+    optimizer_hp = config['optimizer']
 
     build_data('villes.txt', context_len=config['context_len'], train_split=train_split)
 
     model = BengioLM(get_voc_size(), context_len, embed_dim, hidden_dim)
     model.to(device)
 
+    if optimizer_hp == 'SGD':
+        optimizer = torch.optim.SGD(model.parameters(), lr=lr)
+    elif optimizer_hp == 'SGD_M':
+        optimizer = torch.optim.SGD(model.parameters(), lr=lr, momentum=0.9)
+    elif optimizer_hp == 'Adam':
+        optimizer = torch.optim.Adam(model.parameters(), lr=lr)
+    else:
+        optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=0.01, betas=(0.9, 0.99))
+        
     start_time = time.time()
 
     if wandb_log:
@@ -43,13 +53,9 @@ def objective(config, wandb_log):
 
         loss = F.cross_entropy(logits, Yb)
 
-        for p in model.parameters():
-            p.grad = None
-
+        optimizer.zero_grad()
         loss.backward()
-
-        for p in model.parameters():
-            p.data += -lr * p.grad
+        optimizer.step()
 
         # eval : track loss (train & val), update_to_data
         if wandb_log and (update_num % eval_interval == 0):
@@ -101,7 +107,8 @@ def run():
                "batch_size": 1024,
                "embed_dim": 16,
                "hidden_dim": 100,
-               "context_len": 3
+               "context_len": 3,
+               "optimizer": "Adam"
            }
 
     wandb.init(project="bengio_lm", config=config)
@@ -129,7 +136,8 @@ def sweep():
             'batch_size': {'values': [1024]},
             'embed_dim': {'values': [8, 16, 32, 64]},
             'hidden_dim': {'values': [50, 100, 300, 500]},
-            'context_len': {'values': [3, 5, 8]}
+            'context_len': {'values': [3, 5, 8]},
+            'optimizer': {'values': ['SGD', 'SGD_M', 'Adam', 'AdamW']}
         }
     }
     
