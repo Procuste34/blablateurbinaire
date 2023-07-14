@@ -1,0 +1,14 @@
+wandb_version: 1
+
+batch_size:
+  value: 1024
+context_len:
+  value: 3
+embed_dim:
+  value: 16
+hidden_dim:
+  value: 300
+log_learning_rate:
+  value: -2.613256148807145
+optimizer:
+  value: SGD_M

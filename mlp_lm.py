@@ -18,10 +18,10 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 
 def objective(config, wandb_log):
     # train un model avec les HP config
-    # : config.keys = ['context_len', 'learning_rate', 'batch_size', 'embed_dim', 'hidden_dim', 'optimizer']
+    # : config.keys = ['context_len', 'log_learning_rate', 'batch_size', 'embed_dim', 'hidden_dim', 'optimizer']
 
     context_len = config['context_len']
-    lr = config['learning_rate']
+    lr = 10**config['log_learning_rate']
     batch_size = config['batch_size']
     embed_dim = config['embed_dim']
     hidden_dim = config['hidden_dim']
@@ -103,7 +103,7 @@ def objective(config, wandb_log):
 
 def run():
     config = {
-               "learning_rate": 0.03,
+               "log_learning_rate": np.log(0.03),
                "batch_size": 1024,
                "embed_dim": 16,
                "hidden_dim": 100,
@@ -132,7 +132,7 @@ def sweep():
             },
         'parameters': 
         {
-            'learning_rate': {'min': 0.0001, 'max': 0.3},
+            'log_learning_rate': {'min': np.log10(0.0001), 'max': np.log10(0.3)},
             'batch_size': {'values': [1024]},
             'embed_dim': {'values': [8, 16, 32, 64]},
             'hidden_dim': {'values': [50, 100, 300, 500]},
