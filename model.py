@@ -24,5 +24,26 @@ class BengioLM(nn.Module):
 
         return logits
     
-    def sample(self, prompt="", max_new_tokens=None):
-        return
+    def sample(self, device, int_to_char, char_to_int, prompt='', max_new_tokens=None):
+        prompt = self.context_len * '.' + prompt
+        init_len = len(prompt)
+
+        while True:
+            context = prompt[-self.context_len:]
+            context_tokenized = [char_to_int[c] for c in context]
+
+            logits = self.forward(torch.tensor(context_tokenized, device=device))
+            probs = F.softmax(logits, dim=1)
+
+            next_token = torch.multinomial(probs, num_samples=1, replacement=True).item()
+            next_char = int_to_char[next_token]
+
+            if next_char == '.':
+                break
+
+            prompt += next_char
+
+            if len(prompt)-init_len == max_new_tokens:
+                break
+        
+        return prompt[self.context_len:]
