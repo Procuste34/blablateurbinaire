@@ -108,17 +108,18 @@ def run():
                "embed_dim": 16,
                "hidden_dim": 100,
                "context_len": 3,
-               "optimizer": "Adam"
+               "optimizer": "Adam",
+               "architecture": "Bengio"
            }
 
-    wandb.init(project="bengio_lm", config=config)
+    wandb.init(project="communes_lm", config=config)
 
     _ = objective(config, wandb_log=True)
     
     wandb.finish()
 
 def run_one_sweep():
-    wandb.init(project='bengio-lm')
+    wandb.init(project='communes_lm')
     val_loss = objective(wandb.config, wandb_log=False)
     wandb.log({'final_val_loss': val_loss})
 
@@ -137,11 +138,12 @@ def sweep():
             'embed_dim': {'values': [8, 16, 32, 64]},
             'hidden_dim': {'values': [50, 100, 300, 500]},
             'context_len': {'values': [3, 5, 8]},
-            'optimizer': {'values': ['SGD', 'SGD_M', 'Adam', 'AdamW']}
+            'optimizer': {'values': ['SGD', 'SGD_M', 'Adam', 'AdamW']},
+            'architecture': {'values': ['Bengio']}
         }
     }
     
-    sweep_id = wandb.sweep(sweep=sweep_configuration, project='bengio-lm')
+    sweep_id = wandb.sweep(sweep=sweep_configuration, project='communes_lm')
     wandb.agent(sweep_id, function=run_one_sweep)
 
 #run()
