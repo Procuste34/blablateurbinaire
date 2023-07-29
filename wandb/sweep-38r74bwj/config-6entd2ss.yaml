@@ -1,0 +1,18 @@
+wandb_version: 1
+
+act:
+  value: selu
+architecture:
+  value: Transformer
+batch_size:
+  value: 1024
+d_model:
+  value: 64
+log_learning_rate:
+  value: -2.374113348500889
+n_heads:
+  value: 1
+n_layers:
+  value: 4
+optimizer:
+  value: AdamW

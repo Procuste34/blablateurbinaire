@@ -1,0 +1,98 @@
+{
+    "os": "Linux-5.15.0-78-generic-x86_64-with-glibc2.31",
+    "python": "3.11.3",
+    "heartbeatAt": "2023-07-29T16:07:06.791843",
+    "startedAt": "2023-07-29T16:07:05.872957",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "host": "alexJAX",
+    "username": "alex",
+    "executable": "/home/alex/miniconda3/envs/torch23/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3.155583333333333,
+        "min": 800.0,
+        "max": 4600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 2.667,
+            "min": 800.0,
+            "max": 4600.0
+        }
+    ],
+    "disk": {
+        "total": 219.00129318237305,
+        "used": 78.7978744506836
+    },
+    "gpu": "NVIDIA GeForce GTX 1080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 15.549362182617188
+    }
+}

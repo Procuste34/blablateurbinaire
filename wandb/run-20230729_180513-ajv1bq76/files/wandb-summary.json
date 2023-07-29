@@ -1,0 +1,1 @@
+{"loss_train": 229.0963394165039, "loss_val": 230.61282623291015, "lr": 0.6064488579530017, "_timestamp": 1690646792.73827, "_runtime": 79.35517406463623, "_step": 1801, "training_throughput": 157509.1423843174, "params_num": 145838, "_wandb": {"runtime": 18}}

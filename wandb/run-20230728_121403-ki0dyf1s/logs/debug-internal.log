@@ -1,0 +1,17 @@
+2023-07-28 12:14:03,327 INFO    StreamThr :10552 [internal.py:wandb_internal():86] W&B internal server running at pid: 10552, started at: 2023-07-28 12:14:03.326671
+2023-07-28 12:14:03,330 DEBUG   HandlerThread:10552 [handler.py:handle_request():144] handle_request: status
+2023-07-28 12:14:03,336 INFO    WriterThread:10552 [datastore.py:open_for_write():85] open: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230728_121403-ki0dyf1s/run-ki0dyf1s.wandb
+2023-07-28 12:14:03,337 DEBUG   SenderThread:10552 [sender.py:send():369] send: header
+2023-07-28 12:14:03,337 DEBUG   SenderThread:10552 [sender.py:send():369] send: run
+2023-07-28 12:14:03,436 DEBUG   HandlerThread:10552 [handler.py:handle_request():144] handle_request: shutdown
+2023-07-28 12:14:03,436 INFO    HandlerThread:10552 [handler.py:finish():854] shutting down handler
+2023-07-28 12:14:03,835 INFO    SenderThread:10552 [dir_watcher.py:__init__():211] watching files in: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230728_121403-ki0dyf1s/files
+2023-07-28 12:14:03,835 INFO    SenderThread:10552 [sender.py:_start_run_threads():1100] run started: ki0dyf1s with start time 1690539243.328933
+2023-07-28 12:14:03,836 INFO    SenderThread:10552 [sender.py:finish():1526] shutting down sender
+2023-07-28 12:14:03,836 INFO    SenderThread:10552 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-07-28 12:14:04,337 INFO    WriterThread:10552 [datastore.py:close():298] close: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230728_121403-ki0dyf1s/run-ki0dyf1s.wandb
+2023-07-28 12:14:04,835 INFO    SenderThread:10552 [dir_watcher.py:finish():389] scan: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230728_121403-ki0dyf1s/files
+2023-07-28 12:14:04,835 INFO    SenderThread:10552 [dir_watcher.py:finish():403] scan save: /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230728_121403-ki0dyf1s/files/config.yaml config.yaml
+2023-07-28 12:14:04,835 INFO    SenderThread:10552 [file_pusher.py:finish():159] shutting down file pusher
+2023-07-28 12:14:04,836 INFO    SenderThread:10552 [file_pusher.py:join():164] waiting for file pusher
+2023-07-28 12:14:05,498 INFO    wandb-upload_0:10552 [upload_job.py:push():133] Uploaded file /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230728_121403-ki0dyf1s/files/config.yaml

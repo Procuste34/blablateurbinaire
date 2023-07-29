@@ -1,0 +1,1 @@
+{"loss_train": NaN, "loss_val": NaN, "lr": 2.2583146074304187e+34, "_timestamp": 1690646519.0107453, "_runtime": 157.50393533706665, "_step": 9801, "training_throughput": 27987.62149229023, "params_num": 145838, "_wandb": {"runtime": 94}}

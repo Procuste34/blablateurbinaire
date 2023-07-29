@@ -1,0 +1,18 @@
+wandb_version: 1
+
+act:
+  value: gelu
+architecture:
+  value: Transformer
+batch_size:
+  value: 512
+d_model:
+  value: 128
+log_learning_rate:
+  value: -3.608782256356887
+n_heads:
+  value: 1
+n_layers:
+  value: 4
+optimizer:
+  value: AdamW

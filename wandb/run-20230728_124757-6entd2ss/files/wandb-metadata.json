@@ -1,0 +1,99 @@
+{
+    "os": "Linux-5.15.0-78-generic-x86_64-with-glibc2.31",
+    "python": "3.11.3",
+    "heartbeatAt": "2023-07-28T10:47:58.630397",
+    "startedAt": "2023-07-28T10:47:57.428485",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/alex/Bureau/llm/blablateurbinaire/transformer_lm.py",
+    "codePath": "transformer_lm.py",
+    "host": "alexJAX",
+    "username": "alex",
+    "executable": "/home/alex/miniconda3/envs/torch23/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 3.272916666666667,
+        "min": 800.0,
+        "max": 4600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 4.214,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 3.2,
+            "min": 800.0,
+            "max": 4600.0
+        },
+        {
+            "current": 0.8,
+            "min": 800.0,
+            "max": 4600.0
+        }
+    ],
+    "disk": {
+        "total": 219.00129318237305,
+        "used": 78.98809051513672
+    },
+    "gpu": "NVIDIA GeForce GTX 1080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 15.549362182617188
+    }
+}

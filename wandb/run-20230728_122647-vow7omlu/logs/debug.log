@@ -1,0 +1,29 @@
+2023-07-28 12:26:47,551 INFO    MainThread:10965 [wandb_setup.py:_flush():76] Current SDK version is 0.15.5
+2023-07-28 12:26:47,552 INFO    MainThread:10965 [wandb_setup.py:_flush():76] Configure stats pid to 10965
+2023-07-28 12:26:47,552 INFO    MainThread:10965 [wandb_setup.py:_flush():76] Loading settings from /home/alex/.config/wandb/settings
+2023-07-28 12:26:47,552 INFO    MainThread:10965 [wandb_setup.py:_flush():76] Loading settings from /home/alex/Bureau/llm/blablateurbinaire/wandb/settings
+2023-07-28 12:26:47,552 INFO    MainThread:10965 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-07-28 12:26:47,552 INFO    MainThread:10965 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-07-28 12:26:47,552 INFO    MainThread:10965 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'transformer_lm.py', 'program': '/home/alex/Bureau/llm/blablateurbinaire/transformer_lm.py'}
+2023-07-28 12:26:47,552 INFO    MainThread:10965 [wandb_init.py:_log_setup():507] Logging user logs to /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230728_122647-vow7omlu/logs/debug.log
+2023-07-28 12:26:47,553 INFO    MainThread:10965 [wandb_init.py:_log_setup():508] Logging internal logs to /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230728_122647-vow7omlu/logs/debug-internal.log
+2023-07-28 12:26:47,553 INFO    MainThread:10965 [wandb_init.py:init():547] calling init triggers
+2023-07-28 12:26:47,553 INFO    MainThread:10965 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'log_learning_rate': -3.506557897319982, 'batch_size': 1024, 'n_layers': 2, 'd_model': 64, 'n_heads': 2, 'act': 'selu', 'optimizer': 'AdamW', 'architecture': 'Transformer'}
+2023-07-28 12:26:47,553 INFO    MainThread:10965 [wandb_init.py:init():596] starting backend
+2023-07-28 12:26:47,553 INFO    MainThread:10965 [wandb_init.py:init():600] setting up manager
+2023-07-28 12:26:47,559 INFO    MainThread:10965 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-07-28 12:26:47,563 INFO    MainThread:10965 [wandb_init.py:init():606] backend started and connected
+2023-07-28 12:26:47,566 INFO    MainThread:10965 [wandb_init.py:init():705] updated telemetry
+2023-07-28 12:26:47,566 INFO    MainThread:10965 [wandb_init.py:init():738] communicating run to backend with 60.0 second timeout
+2023-07-28 12:26:48,141 INFO    MainThread:10965 [wandb_run.py:_on_init():2173] communicating current version
+2023-07-28 12:26:48,289 INFO    MainThread:10965 [wandb_run.py:_on_init():2182] got version response upgrade_message: "wandb version 0.15.7 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-07-28 12:26:48,289 INFO    MainThread:10965 [wandb_init.py:init():789] starting run threads in backend
+2023-07-28 12:26:50,637 INFO    MainThread:10965 [wandb_run.py:_console_start():2152] atexit reg
+2023-07-28 12:26:50,637 INFO    MainThread:10965 [wandb_run.py:_redirect():2007] redirect: 3
+2023-07-28 12:26:50,637 INFO    MainThread:10965 [wandb_run.py:_redirect():2072] Wrapping output streams.
+2023-07-28 12:26:50,637 INFO    MainThread:10965 [wandb_run.py:_redirect():2097] Redirects installed.
+2023-07-28 12:26:50,637 INFO    MainThread:10965 [wandb_init.py:init():830] run started, returning control to user process
+2023-07-28 12:26:51,285 INFO    MainThread:10965 [wandb_watch.py:watch():51] Watching
+2023-07-28 12:26:57,135 WARNING MsgRouterThr:10965 [router.py:message_loop():77] message_loop has been closed

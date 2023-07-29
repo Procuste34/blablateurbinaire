@@ -1,0 +1,20 @@
+2023-07-28 12:15:31,163 INFO    Thread-6 (_run_job):10601 [wandb_setup.py:_flush():76] Current SDK version is 0.15.5
+2023-07-28 12:15:31,163 INFO    Thread-6 (_run_job):10601 [wandb_setup.py:_flush():76] Configure stats pid to 10601
+2023-07-28 12:15:31,163 INFO    Thread-6 (_run_job):10601 [wandb_setup.py:_flush():76] Loading settings from /home/alex/.config/wandb/settings
+2023-07-28 12:15:31,163 INFO    Thread-6 (_run_job):10601 [wandb_setup.py:_flush():76] Loading settings from /home/alex/Bureau/llm/blablateurbinaire/wandb/settings
+2023-07-28 12:15:31,163 INFO    Thread-6 (_run_job):10601 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'blablateurbinaire', 'entity': 'alexandretl', 'root_dir': '/home/alex/Bureau/llm/blablateurbinaire', 'run_id': 'y2rcpdie', 'sweep_param_path': '/home/alex/Bureau/llm/blablateurbinaire/wandb/sweep-7axzrsnh/config-y2rcpdie.yaml', 'sweep_id': '7axzrsnh'}
+2023-07-28 12:15:31,163 INFO    Thread-6 (_run_job):10601 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-07-28 12:15:31,163 INFO    Thread-6 (_run_job):10601 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'transformer_lm.py', 'program': '/home/alex/Bureau/llm/blablateurbinaire/transformer_lm.py'}
+2023-07-28 12:15:31,163 INFO    Thread-6 (_run_job):10601 [wandb_init.py:_log_setup():507] Logging user logs to /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230728_121531-y2rcpdie/logs/debug.log
+2023-07-28 12:15:31,163 INFO    Thread-6 (_run_job):10601 [wandb_init.py:_log_setup():508] Logging internal logs to /home/alex/Bureau/llm/blablateurbinaire/wandb/run-20230728_121531-y2rcpdie/logs/debug-internal.log
+2023-07-28 12:15:31,163 INFO    Thread-6 (_run_job):10601 [wandb_init.py:init():547] calling init triggers
+2023-07-28 12:15:31,164 INFO    Thread-6 (_run_job):10601 [wandb_init.py:init():554] wandb.init called with sweep_config: {'act': 'selu', 'architecture': 'Transformer', 'batch_size': 512, 'd_model': 64, 'log_learning_rate': -3.917397246402744, 'n_heads': 8, 'n_layers': 1, 'optimizer': 'AdamW'}
+config: {}
+2023-07-28 12:15:31,164 INFO    Thread-6 (_run_job):10601 [wandb_init.py:init():596] starting backend
+2023-07-28 12:15:31,164 INFO    Thread-6 (_run_job):10601 [wandb_init.py:init():600] setting up manager
+2023-07-28 12:15:31,169 INFO    Thread-6 (_run_job):10601 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-07-28 12:15:31,174 INFO    Thread-6 (_run_job):10601 [wandb_init.py:init():606] backend started and connected
+2023-07-28 12:15:31,181 INFO    Thread-6 (_run_job):10601 [wandb_run.py:_config_callback():1281] config_cb None None {'act': 'selu', 'architecture': 'Transformer', 'batch_size': 512, 'd_model': 64, 'log_learning_rate': -3.917397246402744, 'n_heads': 8, 'n_layers': 1, 'optimizer': 'AdamW'}
+2023-07-28 12:15:31,182 INFO    Thread-6 (_run_job):10601 [wandb_init.py:init():705] updated telemetry
+2023-07-28 12:15:31,182 INFO    Thread-6 (_run_job):10601 [wandb_init.py:init():738] communicating run to backend with 60.0 second timeout
+2023-07-28 12:15:31,920 INFO    Thread-6 (_run_job):10601 [wandb_run.py:_on_init():2173] communicating current version
